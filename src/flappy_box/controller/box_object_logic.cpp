@@ -56,5 +56,5 @@ bool BoxObjectLogic::advance( ::controller::Logic& l, ::controller::InputEventHa
     _model->setVelocity(v_neu);
     _model->setPosition(p_neu);
         
-    return true;
+    return false;
     }
