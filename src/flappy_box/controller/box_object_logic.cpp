@@ -37,18 +37,20 @@ bool BoxObjectLogic::advance( ::controller::Logic& l, ::controller::InputEventHa
     vec3_type p_neu = p_alt + dp;
 
     // check for correct position value
-
-    if (p_neu[0] > _model->maxPosition()[0]) {
+    
+    std::cout << p_neu;
+    
+    if (std::abs(p_neu[0]) > _model->maxPosition()[0]) {
         p_neu(0) =_model->maxPosition()(0);
         // box at side end of the world
-	v_neu[0] *= -1;
+	v_neu *= -1;
 	v_neu *= 0.8;
     }
     
-    if (p_neu[2] > _model->maxPosition()[2]) {
-        p_neu(2) =_model->maxPosition()(2);
+    if (std::abs(p_neu[2]) > _model->maxPosition()[2]) {
+        p_neu(2) =std::abs(_model->maxPosition()(2));
 	// box at top or bottom end of the world
-	v_neu[2] *= -1;
+	v_neu *= -1;
 	v_neu *= 0.8;
     }
     
