@@ -130,25 +130,25 @@ controller/input_event_handler.hpp
 string
 -
 
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/engine.cpp
+/home/matti/projects/cpp4cg5/src/controller/engine.cpp
 controller/engine.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/controller/engine.hpp
+/home/matti/projects/cpp4cg5/src/controller/controller/engine.hpp
 
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/glut_engine.cpp
+/home/matti/projects/cpp4cg5/src/controller/glut_engine.cpp
 controller/glut_engine.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/controller/glut_engine.hpp
+/home/matti/projects/cpp4cg5/src/controller/controller/glut_engine.hpp
 GL/freeglut.h
 -
 
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/logic.cpp
+/home/matti/projects/cpp4cg5/src/controller/logic.cpp
 controller/logic.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/controller/logic.hpp
+/home/matti/projects/cpp4cg5/src/controller/controller/logic.hpp
 math.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/math.hpp
+/home/matti/projects/cpp4cg5/src/controller/math.hpp
 
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/box_object_logic.cpp
+/home/matti/projects/cpp4cg5/src/flappy_box/controller/box_object_logic.cpp
 flappy_box/controller/box_object_logic.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/flappy_box/controller/box_object_logic.hpp
+/home/matti/projects/cpp4cg5/src/flappy_box/controller/flappy_box/controller/box_object_logic.hpp
 AL/alut.h
 -
 thread
@@ -156,31 +156,31 @@ thread
 GL/freeglut.h
 -
 
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/flappy_engine.cpp
+/home/matti/projects/cpp4cg5/src/flappy_box/controller/flappy_engine.cpp
 flappy_box/controller/flappy_engine.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/flappy_box/controller/flappy_engine.hpp
+/home/matti/projects/cpp4cg5/src/flappy_box/controller/flappy_box/controller/flappy_engine.hpp
 flappy_box/model/box.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/flappy_box/model/box.hpp
+/home/matti/projects/cpp4cg5/src/flappy_box/controller/flappy_box/model/box.hpp
 flappy_box/controller/box_object_logic.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/flappy_box/controller/box_object_logic.hpp
+/home/matti/projects/cpp4cg5/src/flappy_box/controller/flappy_box/controller/box_object_logic.hpp
 flappy_box/view/box_gl_drawable.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/flappy_box/view/box_gl_drawable.hpp
+/home/matti/projects/cpp4cg5/src/flappy_box/controller/flappy_box/view/box_gl_drawable.hpp
 flappy_box/view/box_al_audible.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/flappy_box/view/box_al_audible.hpp
+/home/matti/projects/cpp4cg5/src/flappy_box/controller/flappy_box/view/box_al_audible.hpp
 view/glut_window.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/view/glut_window.hpp
+/home/matti/projects/cpp4cg5/src/flappy_box/controller/view/glut_window.hpp
 AL/alut.h
 -
 GL/freeglut.h
 -
 
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/model/box.cpp
+/home/matti/projects/cpp4cg5/src/flappy_box/model/box.cpp
 flappy_box/model/box.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/model/flappy_box/model/box.hpp
+/home/matti/projects/cpp4cg5/src/flappy_box/model/flappy_box/model/box.hpp
 
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/box_al_audible.cpp
+/home/matti/projects/cpp4cg5/src/flappy_box/view/box_al_audible.cpp
 flappy_box/view/box_al_audible.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/flappy_box/view/box_al_audible.hpp
+/home/matti/projects/cpp4cg5/src/flappy_box/view/flappy_box/view/box_al_audible.hpp
 AL/alut.h
 -
 thread
@@ -188,35 +188,35 @@ thread
 functional
 -
 math.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/math.hpp
+/home/matti/projects/cpp4cg5/src/flappy_box/view/math.hpp
 sound_provider.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/sound_provider.hpp
+/home/matti/projects/cpp4cg5/src/flappy_box/view/sound_provider.hpp
 
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/box_gl_drawable.cpp
+/home/matti/projects/cpp4cg5/src/flappy_box/view/box_gl_drawable.cpp
 flappy_box/view/box_gl_drawable.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/flappy_box/view/box_gl_drawable.hpp
+/home/matti/projects/cpp4cg5/src/flappy_box/view/flappy_box/view/box_gl_drawable.hpp
 GL/freeglut.h
 -
 algorithm
 -
 
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/main.cpp
+/home/matti/projects/cpp4cg5/src/main.cpp
 flappy_box/controller/flappy_engine.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/flappy_engine.hpp
+/home/matti/projects/cpp4cg5/src/flappy_box/controller/flappy_engine.hpp
 
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/model/game.cpp
+/home/matti/projects/cpp4cg5/src/model/game.cpp
 model/game.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/model/model/game.hpp
+/home/matti/projects/cpp4cg5/src/model/model/game.hpp
 algorithm
 -
 
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/model/game_object.cpp
+/home/matti/projects/cpp4cg5/src/model/game_object.cpp
 model/game_object.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/model/model/game_object.hpp
+/home/matti/projects/cpp4cg5/src/model/model/game_object.hpp
 
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/sound_provider.cpp
+/home/matti/projects/cpp4cg5/src/sound_provider.cpp
 sound_provider.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/sound_provider.hpp
+/home/matti/projects/cpp4cg5/src/sound_provider.hpp
 iostream
 -
 thread
@@ -228,21 +228,21 @@ string
 cstdio
 -
 
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/al_renderer.cpp
+/home/matti/projects/cpp4cg5/src/view/al_renderer.cpp
 view/al_renderer.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/view/al_renderer.hpp
+/home/matti/projects/cpp4cg5/src/view/view/al_renderer.hpp
 
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/gl_renderer.cpp
+/home/matti/projects/cpp4cg5/src/view/gl_renderer.cpp
 view/gl_renderer.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/view/gl_renderer.hpp
+/home/matti/projects/cpp4cg5/src/view/view/gl_renderer.hpp
 view/glut_window.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/view/glut_window.hpp
+/home/matti/projects/cpp4cg5/src/view/view/glut_window.hpp
 GL/freeglut.h
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/GL/freeglut.h
+/home/matti/projects/cpp4cg5/src/view/GL/freeglut.h
 
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/glut_window.cpp
+/home/matti/projects/cpp4cg5/src/view/glut_window.cpp
 view/glut_window.hpp
-/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/view/glut_window.hpp
+/home/matti/projects/cpp4cg5/src/view/view/glut_window.hpp
 GL/glew.h
 -
 GL/freeglut.h

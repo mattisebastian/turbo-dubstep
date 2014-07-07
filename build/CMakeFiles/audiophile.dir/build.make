@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5"
+CMAKE_SOURCE_DIR = /home/matti/projects/cpp4cg5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build"
+CMAKE_BINARY_DIR = /home/matti/projects/cpp4cg5/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/audiophile.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/audiophile.dir/flags.make
 
 CMakeFiles/audiophile.dir/src/main.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/main.cpp.o: ../src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/main.cpp.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/main.cpp"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/main.cpp.o -c /home/matti/projects/cpp4cg5/src/main.cpp
 
 CMakeFiles/audiophile.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/main.cpp" > CMakeFiles/audiophile.dir/src/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/main.cpp > CMakeFiles/audiophile.dir/src/main.cpp.i
 
 CMakeFiles/audiophile.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/main.cpp" -o CMakeFiles/audiophile.dir/src/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/main.cpp -o CMakeFiles/audiophile.dir/src/main.cpp.s
 
 CMakeFiles/audiophile.dir/src/main.cpp.o.requires:
 .PHONY : CMakeFiles/audiophile.dir/src/main.cpp.o.requires
@@ -74,17 +74,17 @@ CMakeFiles/audiophile.dir/src/main.cpp.o.provides.build: CMakeFiles/audiophile.d
 
 CMakeFiles/audiophile.dir/src/model/game.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/model/game.cpp.o: ../src/model/game.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/model/game.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/model/game.cpp.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/model/game.cpp"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/model/game.cpp.o -c /home/matti/projects/cpp4cg5/src/model/game.cpp
 
 CMakeFiles/audiophile.dir/src/model/game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/model/game.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/model/game.cpp" > CMakeFiles/audiophile.dir/src/model/game.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/model/game.cpp > CMakeFiles/audiophile.dir/src/model/game.cpp.i
 
 CMakeFiles/audiophile.dir/src/model/game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/model/game.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/model/game.cpp" -o CMakeFiles/audiophile.dir/src/model/game.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/model/game.cpp -o CMakeFiles/audiophile.dir/src/model/game.cpp.s
 
 CMakeFiles/audiophile.dir/src/model/game.cpp.o.requires:
 .PHONY : CMakeFiles/audiophile.dir/src/model/game.cpp.o.requires
@@ -97,17 +97,17 @@ CMakeFiles/audiophile.dir/src/model/game.cpp.o.provides.build: CMakeFiles/audiop
 
 CMakeFiles/audiophile.dir/src/model/game_object.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/model/game_object.cpp.o: ../src/model/game_object.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/model/game_object.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/model/game_object.cpp.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/model/game_object.cpp"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/model/game_object.cpp.o -c /home/matti/projects/cpp4cg5/src/model/game_object.cpp
 
 CMakeFiles/audiophile.dir/src/model/game_object.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/model/game_object.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/model/game_object.cpp" > CMakeFiles/audiophile.dir/src/model/game_object.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/model/game_object.cpp > CMakeFiles/audiophile.dir/src/model/game_object.cpp.i
 
 CMakeFiles/audiophile.dir/src/model/game_object.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/model/game_object.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/model/game_object.cpp" -o CMakeFiles/audiophile.dir/src/model/game_object.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/model/game_object.cpp -o CMakeFiles/audiophile.dir/src/model/game_object.cpp.s
 
 CMakeFiles/audiophile.dir/src/model/game_object.cpp.o.requires:
 .PHONY : CMakeFiles/audiophile.dir/src/model/game_object.cpp.o.requires
@@ -120,17 +120,17 @@ CMakeFiles/audiophile.dir/src/model/game_object.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/audiophile.dir/src/controller/engine.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/controller/engine.cpp.o: ../src/controller/engine.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/controller/engine.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/controller/engine.cpp.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/engine.cpp"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/controller/engine.cpp.o -c /home/matti/projects/cpp4cg5/src/controller/engine.cpp
 
 CMakeFiles/audiophile.dir/src/controller/engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/controller/engine.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/engine.cpp" > CMakeFiles/audiophile.dir/src/controller/engine.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/controller/engine.cpp > CMakeFiles/audiophile.dir/src/controller/engine.cpp.i
 
 CMakeFiles/audiophile.dir/src/controller/engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/controller/engine.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/engine.cpp" -o CMakeFiles/audiophile.dir/src/controller/engine.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/controller/engine.cpp -o CMakeFiles/audiophile.dir/src/controller/engine.cpp.s
 
 CMakeFiles/audiophile.dir/src/controller/engine.cpp.o.requires:
 .PHONY : CMakeFiles/audiophile.dir/src/controller/engine.cpp.o.requires
@@ -143,17 +143,17 @@ CMakeFiles/audiophile.dir/src/controller/engine.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.o: ../src/controller/glut_engine.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/glut_engine.cpp"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.o -c /home/matti/projects/cpp4cg5/src/controller/glut_engine.cpp
 
 CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/glut_engine.cpp" > CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/controller/glut_engine.cpp > CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.i
 
 CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/glut_engine.cpp" -o CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/controller/glut_engine.cpp -o CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.s
 
 CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.o.requires:
 .PHONY : CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.o.requires
@@ -166,17 +166,17 @@ CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.o.provides.build: CMake
 
 CMakeFiles/audiophile.dir/src/controller/logic.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/controller/logic.cpp.o: ../src/controller/logic.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/controller/logic.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/controller/logic.cpp.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/logic.cpp"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/controller/logic.cpp.o -c /home/matti/projects/cpp4cg5/src/controller/logic.cpp
 
 CMakeFiles/audiophile.dir/src/controller/logic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/controller/logic.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/logic.cpp" > CMakeFiles/audiophile.dir/src/controller/logic.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/controller/logic.cpp > CMakeFiles/audiophile.dir/src/controller/logic.cpp.i
 
 CMakeFiles/audiophile.dir/src/controller/logic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/controller/logic.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/logic.cpp" -o CMakeFiles/audiophile.dir/src/controller/logic.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/controller/logic.cpp -o CMakeFiles/audiophile.dir/src/controller/logic.cpp.s
 
 CMakeFiles/audiophile.dir/src/controller/logic.cpp.o.requires:
 .PHONY : CMakeFiles/audiophile.dir/src/controller/logic.cpp.o.requires
@@ -189,17 +189,17 @@ CMakeFiles/audiophile.dir/src/controller/logic.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/audiophile.dir/src/view/glut_window.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/view/glut_window.cpp.o: ../src/view/glut_window.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/view/glut_window.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/view/glut_window.cpp.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/glut_window.cpp"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/view/glut_window.cpp.o -c /home/matti/projects/cpp4cg5/src/view/glut_window.cpp
 
 CMakeFiles/audiophile.dir/src/view/glut_window.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/view/glut_window.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/glut_window.cpp" > CMakeFiles/audiophile.dir/src/view/glut_window.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/view/glut_window.cpp > CMakeFiles/audiophile.dir/src/view/glut_window.cpp.i
 
 CMakeFiles/audiophile.dir/src/view/glut_window.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/view/glut_window.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/glut_window.cpp" -o CMakeFiles/audiophile.dir/src/view/glut_window.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/view/glut_window.cpp -o CMakeFiles/audiophile.dir/src/view/glut_window.cpp.s
 
 CMakeFiles/audiophile.dir/src/view/glut_window.cpp.o.requires:
 .PHONY : CMakeFiles/audiophile.dir/src/view/glut_window.cpp.o.requires
@@ -212,17 +212,17 @@ CMakeFiles/audiophile.dir/src/view/glut_window.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.o: ../src/view/gl_renderer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/gl_renderer.cpp"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.o -c /home/matti/projects/cpp4cg5/src/view/gl_renderer.cpp
 
 CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/gl_renderer.cpp" > CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/view/gl_renderer.cpp > CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.i
 
 CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/gl_renderer.cpp" -o CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/view/gl_renderer.cpp -o CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.s
 
 CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.o.requires:
 .PHONY : CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.o.requires
@@ -235,17 +235,17 @@ CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.o: ../src/view/al_renderer.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/al_renderer.cpp"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.o -c /home/matti/projects/cpp4cg5/src/view/al_renderer.cpp
 
 CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/al_renderer.cpp" > CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/view/al_renderer.cpp > CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.i
 
 CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/al_renderer.cpp" -o CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/view/al_renderer.cpp -o CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.s
 
 CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.o.requires:
 .PHONY : CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.o.requires
@@ -258,17 +258,17 @@ CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o: ../src/flappy_box/model/box.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/model/box.cpp"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/model/box.cpp
 
 CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/model/box.cpp" > CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/flappy_box/model/box.cpp > CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.i
 
 CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/model/box.cpp" -o CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/flappy_box/model/box.cpp -o CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.s
 
 CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o.requires:
 .PHONY : CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o.requires
@@ -281,17 +281,17 @@ CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o.provides.build: CMakeFi
 
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../src/flappy_box/controller/flappy_engine.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_11)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/flappy_engine.cpp"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/controller/flappy_engine.cpp
 
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/flappy_engine.cpp" > CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/flappy_box/controller/flappy_engine.cpp > CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.i
 
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/flappy_engine.cpp" -o CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/flappy_box/controller/flappy_engine.cpp -o CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.s
 
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o.requires:
 .PHONY : CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o.requires
@@ -304,17 +304,17 @@ CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o.provides
 
 CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o: ../src/flappy_box/controller/box_object_logic.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_12)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/box_object_logic.cpp"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/controller/box_object_logic.cpp
 
 CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/box_object_logic.cpp" > CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/flappy_box/controller/box_object_logic.cpp > CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.i
 
 CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/box_object_logic.cpp" -o CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/flappy_box/controller/box_object_logic.cpp -o CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.s
 
 CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o.requires:
 .PHONY : CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o.requires
@@ -327,17 +327,17 @@ CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o.provi
 
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o: ../src/flappy_box/view/box_al_audible.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/box_al_audible.cpp"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/view/box_al_audible.cpp
 
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/box_al_audible.cpp" > CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/flappy_box/view/box_al_audible.cpp > CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.i
 
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/box_al_audible.cpp" -o CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/flappy_box/view/box_al_audible.cpp -o CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.s
 
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o.requires:
 .PHONY : CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o.requires
@@ -350,17 +350,17 @@ CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o.provides.buil
 
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o: ../src/flappy_box/view/box_gl_drawable.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/box_gl_drawable.cpp"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/view/box_gl_drawable.cpp
 
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/box_gl_drawable.cpp" > CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/flappy_box/view/box_gl_drawable.cpp > CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.i
 
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/box_gl_drawable.cpp" -o CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/flappy_box/view/box_gl_drawable.cpp -o CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.s
 
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o.requires:
 .PHONY : CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o.requires
@@ -373,17 +373,17 @@ CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o.provides.bui
 
 CMakeFiles/audiophile.dir/src/sound_provider.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/sound_provider.cpp.o: ../src/sound_provider.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_15)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/sound_provider.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/sound_provider.cpp.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/sound_provider.cpp"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/sound_provider.cpp.o -c /home/matti/projects/cpp4cg5/src/sound_provider.cpp
 
 CMakeFiles/audiophile.dir/src/sound_provider.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/sound_provider.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/sound_provider.cpp" > CMakeFiles/audiophile.dir/src/sound_provider.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/sound_provider.cpp > CMakeFiles/audiophile.dir/src/sound_provider.cpp.i
 
 CMakeFiles/audiophile.dir/src/sound_provider.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/sound_provider.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/sound_provider.cpp" -o CMakeFiles/audiophile.dir/src/sound_provider.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/sound_provider.cpp -o CMakeFiles/audiophile.dir/src/sound_provider.cpp.s
 
 CMakeFiles/audiophile.dir/src/sound_provider.cpp.o.requires:
 .PHONY : CMakeFiles/audiophile.dir/src/sound_provider.cpp.o.requires
@@ -473,6 +473,6 @@ CMakeFiles/audiophile.dir/clean:
 .PHONY : CMakeFiles/audiophile.dir/clean
 
 CMakeFiles/audiophile.dir/depend:
-	cd "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/DependInfo.cmake" --color=$(COLOR)
+	cd /home/matti/projects/cpp4cg5/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/matti/projects/cpp4cg5 /home/matti/projects/cpp4cg5 /home/matti/projects/cpp4cg5/build /home/matti/projects/cpp4cg5/build /home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/audiophile.dir/depend
 
