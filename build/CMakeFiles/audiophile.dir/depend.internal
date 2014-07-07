@@ -8,7 +8,7 @@ CMakeFiles/audiophile.dir/src/controller/engine.cpp.o
  ../include/factory_map.hpp
  ../include/model/game.hpp
  ../include/model/game_object.hpp
- /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/engine.cpp
+ /home/matti/projects/cpp4cg5/src/controller/engine.cpp
 CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.o
  ../include/controller/engine.hpp
  ../include/controller/glut_engine.hpp
@@ -17,7 +17,7 @@ CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.o
  ../include/factory_map.hpp
  ../include/model/game.hpp
  ../include/model/game_object.hpp
- /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/glut_engine.cpp
+ /home/matti/projects/cpp4cg5/src/controller/glut_engine.cpp
 CMakeFiles/audiophile.dir/src/controller/logic.cpp.o
  ../include/controller/input_event_handler.hpp
  ../include/controller/logic.hpp
@@ -25,7 +25,7 @@ CMakeFiles/audiophile.dir/src/controller/logic.cpp.o
  ../include/math.hpp
  ../include/model/game.hpp
  ../include/model/game_object.hpp
- /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/logic.cpp
+ /home/matti/projects/cpp4cg5/src/controller/logic.cpp
 CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o
  ../include/controller/input_event_handler.hpp
  ../include/controller/logic.hpp
@@ -35,7 +35,7 @@ CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o
  ../include/math.hpp
  ../include/model/game.hpp
  ../include/model/game_object.hpp
- /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/box_object_logic.cpp
+ /home/matti/projects/cpp4cg5/src/flappy_box/controller/box_object_logic.cpp
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o
  ../include/controller/engine.hpp
  ../include/controller/glut_engine.hpp
@@ -53,12 +53,12 @@ CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o
  ../include/view/al_renderer.hpp
  ../include/view/gl_renderer.hpp
  ../include/view/glut_window.hpp
- /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/flappy_engine.cpp
+ /home/matti/projects/cpp4cg5/src/flappy_box/controller/flappy_engine.cpp
 CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o
  ../include/flappy_box/model/box.hpp
  ../include/math.hpp
  ../include/model/game_object.hpp
- /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/model/box.cpp
+ /home/matti/projects/cpp4cg5/src/flappy_box/model/box.cpp
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o
  ../include/factory_map.hpp
  ../include/flappy_box/model/box.hpp
@@ -68,7 +68,7 @@ CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o
  ../include/model/game_object.hpp
  ../include/sound_provider.hpp
  ../include/view/al_renderer.hpp
- /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/box_al_audible.cpp
+ /home/matti/projects/cpp4cg5/src/flappy_box/view/box_al_audible.cpp
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o
  ../include/factory_map.hpp
  ../include/flappy_box/model/box.hpp
@@ -77,7 +77,7 @@ CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o
  ../include/model/game.hpp
  ../include/model/game_object.hpp
  ../include/view/gl_renderer.hpp
- /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/box_gl_drawable.cpp
+ /home/matti/projects/cpp4cg5/src/flappy_box/view/box_gl_drawable.cpp
 CMakeFiles/audiophile.dir/src/main.cpp.o
  ../include/controller/engine.hpp
  ../include/controller/glut_engine.hpp
@@ -89,23 +89,23 @@ CMakeFiles/audiophile.dir/src/main.cpp.o
  ../include/model/game_object.hpp
  ../include/view/al_renderer.hpp
  ../include/view/gl_renderer.hpp
- /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/main.cpp
+ /home/matti/projects/cpp4cg5/src/main.cpp
 CMakeFiles/audiophile.dir/src/model/game.cpp.o
  ../include/model/game.hpp
  ../include/model/game_object.hpp
- /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/model/game.cpp
+ /home/matti/projects/cpp4cg5/src/model/game.cpp
 CMakeFiles/audiophile.dir/src/model/game_object.cpp.o
  ../include/model/game_object.hpp
- /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/model/game_object.cpp
+ /home/matti/projects/cpp4cg5/src/model/game_object.cpp
 CMakeFiles/audiophile.dir/src/sound_provider.cpp.o
  ../include/sound_provider.hpp
- /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/sound_provider.cpp
+ /home/matti/projects/cpp4cg5/src/sound_provider.cpp
 CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.o
  ../include/factory_map.hpp
  ../include/model/game.hpp
  ../include/model/game_object.hpp
  ../include/view/al_renderer.hpp
- /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/al_renderer.cpp
+ /home/matti/projects/cpp4cg5/src/view/al_renderer.cpp
 CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.o
  ../include/controller/input_event_handler.hpp
  ../include/factory_map.hpp
@@ -113,7 +113,7 @@ CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.o
  ../include/model/game_object.hpp
  ../include/view/gl_renderer.hpp
  ../include/view/glut_window.hpp
- /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/gl_renderer.cpp
+ /home/matti/projects/cpp4cg5/src/view/gl_renderer.cpp
 CMakeFiles/audiophile.dir/src/view/glut_window.cpp.o
  ../include/controller/input_event_handler.hpp
  ../include/factory_map.hpp
@@ -121,4 +121,4 @@ CMakeFiles/audiophile.dir/src/view/glut_window.cpp.o
  ../include/model/game_object.hpp
  ../include/view/gl_renderer.hpp
  ../include/view/glut_window.hpp
- /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/glut_window.cpp
+ /home/matti/projects/cpp4cg5/src/view/glut_window.cpp

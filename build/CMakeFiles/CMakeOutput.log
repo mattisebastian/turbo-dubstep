@@ -1,4 +1,4 @@
-The system is: Linux - 3.15.1-1-ARCH - x86_64
+The system is: Linux - 3.15.3-1-ARCH - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
 Build flags: 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/3.0.0/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/matti/projects/cpp4cg5/build/CMakeFiles/3.0.0/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,78 +23,78 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/3.0.0/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/matti/projects/cpp4cg5/build/CMakeFiles/3.0.0/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp
+Change Dir: /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec3062375276/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3062375276.dir/build.make CMakeFiles/cmTryCompileExec3062375276.dir/build
-make[1]: Entering directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
-Building C object CMakeFiles/cmTryCompileExec3062375276.dir/testCCompiler.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3062375276.dir/testCCompiler.c.o   -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp/testCCompiler.c"
-Linking C executable cmTryCompileExec3062375276
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3062375276.dir/link.txt --verbose=1
-/usr/bin/cc       CMakeFiles/cmTryCompileExec3062375276.dir/testCCompiler.c.o  -o cmTryCompileExec3062375276 -rdynamic 
-make[1]: Leaving directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3566362436/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3566362436.dir/build.make CMakeFiles/cmTryCompileExec3566362436.dir/build
+make[1]: Entering directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3566362436.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3566362436.dir/testCCompiler.c.o   -c /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec3566362436
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3566362436.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3566362436.dir/testCCompiler.c.o  -o cmTryCompileExec3566362436 -rdynamic 
+make[1]: Leaving directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp
+Change Dir: /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec2870422292/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2870422292.dir/build.make CMakeFiles/cmTryCompileExec2870422292.dir/build
-make[1]: Entering directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
-Building C object CMakeFiles/cmTryCompileExec2870422292.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2870422292.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.0/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec2870422292
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2870422292.dir/link.txt --verbose=1
-/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2870422292.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2870422292 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2258568738/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2258568738.dir/build.make CMakeFiles/cmTryCompileExec2258568738.dir/build
+make[1]: Entering directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2258568738.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2258568738.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.0/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec2258568738
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2258568738.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2258568738.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2258568738 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/cc
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/lto-wrapper
 Target: x86_64-unknown-linux-gnu
-Configured with: /build/gcc/src/gcc-4.9-20140604/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-cloog-version-check --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --disable-multilib --disable-werror --enable-checking=release
+Configured with: /build/gcc-multilib/src/gcc-4.9-20140604/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-isl-version-check --disable-cloog-version-check --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-multilib --disable-werror --enable-checking=release
 Thread model: posix
 gcc version 4.9.0 20140604 (prerelease) (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2870422292' '-rdynamic' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbdyXpT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2870422292 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../.. CMakeFiles/cmTryCompileExec2870422292.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crtn.o
-make[1]: Leaving directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2258568738' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJhB1uy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2258568738 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../.. CMakeFiles/cmTryCompileExec2258568738.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crtn.o
+make[1]: Leaving directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec2870422292/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2870422292.dir/build.make CMakeFiles/cmTryCompileExec2870422292.dir/build]
-  ignore line: [make[1]: Entering directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp/CMakeFiles" 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec2870422292.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2870422292.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.0/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec2870422292]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2870422292.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2870422292.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2870422292 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec2258568738/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec2258568738.dir/build.make CMakeFiles/cmTryCompileExec2258568738.dir/build]
+  ignore line: [make[1]: Entering directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec2258568738.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2258568738.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-3.0/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec2258568738]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2258568738.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec2258568738.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2258568738 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/cc]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/lto-wrapper]
   ignore line: [Target: x86_64-unknown-linux-gnu]
-  ignore line: [Configured with: /build/gcc/src/gcc-4.9-20140604/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-cloog-version-check --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --disable-multilib --disable-werror --enable-checking=release]
+  ignore line: [Configured with: /build/gcc-multilib/src/gcc-4.9-20140604/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-isl-version-check --disable-cloog-version-check --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-multilib --disable-werror --enable-checking=release]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 4.9.0 20140604 (prerelease) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2870422292' '-rdynamic' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccbdyXpT.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2870422292 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../.. CMakeFiles/cmTryCompileExec2870422292.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2258568738' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJhB1uy.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec2258568738 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../.. CMakeFiles/cmTryCompileExec2258568738.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crtn.o]
     arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccbdyXpT.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccJhB1uy.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -109,7 +109,7 @@ Parsed C implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec2870422292] ==> ignore
+    arg [cmTryCompileExec2258568738] ==> ignore
     arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtbegin.o] ==> ignore
@@ -118,7 +118,7 @@ Parsed C implicit link information from above output:
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../..] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../..]
-    arg [CMakeFiles/cmTryCompileExec2870422292.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec2258568738.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -145,75 +145,75 @@ Parsed C implicit link information from above output:
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp
+Change Dir: /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec2515473380/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec2515473380.dir/build.make CMakeFiles/cmTryCompileExec2515473380.dir/build
-make[1]: Entering directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
-Building CXX object CMakeFiles/cmTryCompileExec2515473380.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2515473380.dir/testCXXCompiler.cxx.o -c "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
-Linking CXX executable cmTryCompileExec2515473380
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2515473380.dir/link.txt --verbose=1
-/usr/bin/c++        CMakeFiles/cmTryCompileExec2515473380.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2515473380 -rdynamic 
-make[1]: Leaving directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2873243940/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2873243940.dir/build.make CMakeFiles/cmTryCompileExec2873243940.dir/build
+make[1]: Entering directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2873243940.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2873243940.dir/testCXXCompiler.cxx.o -c /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec2873243940
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2873243940.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec2873243940.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2873243940 -rdynamic 
+make[1]: Leaving directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp
+Change Dir: /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec156678130/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec156678130.dir/build.make CMakeFiles/cmTryCompileExec156678130.dir/build
-make[1]: Entering directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
-Building CXX object CMakeFiles/cmTryCompileExec156678130.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec156678130.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.0/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec156678130
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec156678130.dir/link.txt --verbose=1
-/usr/bin/c++      -v CMakeFiles/cmTryCompileExec156678130.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec156678130 -rdynamic  
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3753090134/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3753090134.dir/build.make CMakeFiles/cmTryCompileExec3753090134.dir/build
+make[1]: Entering directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3753090134.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3753090134.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.0/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec3753090134
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3753090134.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTryCompileExec3753090134.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3753090134 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
 COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/lto-wrapper
 Target: x86_64-unknown-linux-gnu
-Configured with: /build/gcc/src/gcc-4.9-20140604/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-cloog-version-check --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --disable-multilib --disable-werror --enable-checking=release
+Configured with: /build/gcc-multilib/src/gcc-4.9-20140604/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-isl-version-check --disable-cloog-version-check --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-multilib --disable-werror --enable-checking=release
 Thread model: posix
 gcc version 4.9.0 20140604 (prerelease) (GCC) 
 COMPILER_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/
 LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec156678130' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cckTp47b.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec156678130 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../.. CMakeFiles/cmTryCompileExec156678130.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crtn.o
-make[1]: Leaving directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3753090134' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2QsdLE.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec3753090134 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../.. CMakeFiles/cmTryCompileExec3753090134.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crtn.o
+make[1]: Leaving directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp]
+  ignore line: [Change Dir: /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec156678130/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec156678130.dir/build.make CMakeFiles/cmTryCompileExec156678130.dir/build]
-  ignore line: [make[1]: Entering directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp/CMakeFiles" 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec156678130.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec156678130.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.0/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec156678130]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec156678130.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec156678130.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec156678130 -rdynamic  ]
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTryCompileExec3753090134/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3753090134.dir/build.make CMakeFiles/cmTryCompileExec3753090134.dir/build]
+  ignore line: [make[1]: Entering directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3753090134.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3753090134.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.0/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec3753090134]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3753090134.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec3753090134.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3753090134 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
   ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/lto-wrapper]
   ignore line: [Target: x86_64-unknown-linux-gnu]
-  ignore line: [Configured with: /build/gcc/src/gcc-4.9-20140604/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-cloog-version-check --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --disable-multilib --disable-werror --enable-checking=release]
+  ignore line: [Configured with: /build/gcc-multilib/src/gcc-4.9-20140604/configure --prefix=/usr --libdir=/usr/lib --libexecdir=/usr/lib --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=https://bugs.archlinux.org/ --enable-languages=c,c++,ada,fortran,go,lto,objc,obj-c++ --enable-shared --enable-threads=posix --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-clocale=gnu --disable-libstdcxx-pch --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-isl-version-check --disable-cloog-version-check --enable-lto --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --enable-multilib --disable-werror --enable-checking=release]
   ignore line: [Thread model: posix]
   ignore line: [gcc version 4.9.0 20140604 (prerelease) (GCC) ]
   ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/]
   ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/:/lib/../lib/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec156678130' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cckTp47b.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec156678130 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../.. CMakeFiles/cmTryCompileExec156678130.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3753090134' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/collect2 -plugin /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2QsdLE.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec3753090134 /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crt1.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crti.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtbegin.o -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0 -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib -L/lib/../lib -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../.. CMakeFiles/cmTryCompileExec3753090134.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtend.o /usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crtn.o]
     arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/collect2] ==> ignore
     arg [-plugin] ==> ignore
     arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/liblto_plugin.so] ==> ignore
     arg [-plugin-opt=/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cckTp47b.res] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc2QsdLE.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
@@ -228,7 +228,7 @@ Parsed CXX implicit link information from above output:
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec156678130] ==> ignore
+    arg [cmTryCompileExec3753090134] ==> ignore
     arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../../../lib/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/crtbegin.o] ==> ignore
@@ -237,7 +237,7 @@ Parsed CXX implicit link information from above output:
     arg [-L/lib/../lib] ==> dir [/lib/../lib]
     arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
     arg [-L/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../..] ==> dir [/usr/lib/gcc/x86_64-unknown-linux-gnu/4.9.0/../../..]
-    arg [CMakeFiles/cmTryCompileExec156678130.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec3753090134.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -262,92 +262,92 @@ Parsed CXX implicit link information from above output:
 
 
 Determining if the function XOpenDisplay exists in the /usr/lib64/libX11.so;/usr/lib64/libXext.so passed with the following output:
-Change Dir: /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp
+Change Dir: /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec1847177910/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1847177910.dir/build.make CMakeFiles/cmTryCompileExec1847177910.dir/build
-make[1]: Entering directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
-Building C object CMakeFiles/cmTryCompileExec1847177910.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec1847177910.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec1847177910
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1847177910.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec1847177910.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1847177910 -rdynamic -lX11 -lXext 
-make[1]: Leaving directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2422038466/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2422038466.dir/build.make CMakeFiles/cmTryCompileExec2422038466.dir/build
+make[1]: Entering directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2422038466.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay   -o CMakeFiles/cmTryCompileExec2422038466.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2422038466
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2422038466.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=XOpenDisplay    CMakeFiles/cmTryCompileExec2422038466.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2422038466 -rdynamic -lX11 -lXext 
+make[1]: Leaving directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function gethostbyname exists passed with the following output:
-Change Dir: /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp
+Change Dir: /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec800190183/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec800190183.dir/build.make CMakeFiles/cmTryCompileExec800190183.dir/build
-make[1]: Entering directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
-Building C object CMakeFiles/cmTryCompileExec800190183.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec800190183.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec800190183
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec800190183.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec800190183.dir/CheckFunctionExists.c.o  -o cmTryCompileExec800190183 -rdynamic 
-make[1]: Leaving directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec4177864098/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec4177864098.dir/build.make CMakeFiles/cmTryCompileExec4177864098.dir/build
+make[1]: Entering directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4177864098.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname   -o CMakeFiles/cmTryCompileExec4177864098.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4177864098
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4177864098.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=gethostbyname    CMakeFiles/cmTryCompileExec4177864098.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4177864098 -rdynamic 
+make[1]: Leaving directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function connect exists passed with the following output:
-Change Dir: /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp
+Change Dir: /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec752152426/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec752152426.dir/build.make CMakeFiles/cmTryCompileExec752152426.dir/build
-make[1]: Entering directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
-Building C object CMakeFiles/cmTryCompileExec752152426.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec752152426.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec752152426
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec752152426.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec752152426.dir/CheckFunctionExists.c.o  -o cmTryCompileExec752152426 -rdynamic 
-make[1]: Leaving directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1899689512/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1899689512.dir/build.make CMakeFiles/cmTryCompileExec1899689512.dir/build
+make[1]: Entering directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1899689512.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec1899689512.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1899689512
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1899689512.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec1899689512.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1899689512 -rdynamic 
+make[1]: Leaving directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function remove exists passed with the following output:
-Change Dir: /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp
+Change Dir: /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec4041058237/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec4041058237.dir/build.make CMakeFiles/cmTryCompileExec4041058237.dir/build
-make[1]: Entering directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
-Building C object CMakeFiles/cmTryCompileExec4041058237.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec4041058237.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec4041058237
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4041058237.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec4041058237.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4041058237 -rdynamic 
-make[1]: Leaving directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec804356498/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec804356498.dir/build.make CMakeFiles/cmTryCompileExec804356498.dir/build
+make[1]: Entering directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec804356498.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove   -o CMakeFiles/cmTryCompileExec804356498.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec804356498
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec804356498.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=remove    CMakeFiles/cmTryCompileExec804356498.dir/CheckFunctionExists.c.o  -o cmTryCompileExec804356498 -rdynamic 
+make[1]: Leaving directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function shmat exists passed with the following output:
-Change Dir: /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp
+Change Dir: /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec3787335543/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec3787335543.dir/build.make CMakeFiles/cmTryCompileExec3787335543.dir/build
-make[1]: Entering directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
-Building C object CMakeFiles/cmTryCompileExec3787335543.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec3787335543.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec3787335543
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3787335543.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec3787335543.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3787335543 -rdynamic 
-make[1]: Leaving directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1657479674/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1657479674.dir/build.make CMakeFiles/cmTryCompileExec1657479674.dir/build
+make[1]: Entering directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1657479674.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat   -o CMakeFiles/cmTryCompileExec1657479674.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1657479674
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1657479674.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=shmat    CMakeFiles/cmTryCompileExec1657479674.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1657479674 -rdynamic 
+make[1]: Leaving directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
 
 
 Determining if the function IceConnectionNumber exists in the ICE passed with the following output:
-Change Dir: /media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp
+Change Dir: /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTryCompileExec1352864066/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec1352864066.dir/build.make CMakeFiles/cmTryCompileExec1352864066.dir/build
-make[1]: Entering directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp/CMakeFiles" 1
-Building C object CMakeFiles/cmTryCompileExec1352864066.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec1352864066.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
-Linking C executable cmTryCompileExec1352864066
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1352864066.dir/link.txt --verbose=1
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec1352864066.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1352864066 -rdynamic -lICE 
-make[1]: Leaving directory '/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/CMakeTmp'
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2245977674/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2245977674.dir/build.make CMakeFiles/cmTryCompileExec2245977674.dir/build
+make[1]: Entering directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2245977674.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber   -o CMakeFiles/cmTryCompileExec2245977674.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2245977674
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2245977674.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=IceConnectionNumber    CMakeFiles/cmTryCompileExec2245977674.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2245977674 -rdynamic -lICE 
+make[1]: Leaving directory '/home/matti/projects/cpp4cg5/build/CMakeFiles/CMakeTmp'
 
 

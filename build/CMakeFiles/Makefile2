@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5"
+CMAKE_SOURCE_DIR = /home/matti/projects/cpp4cg5
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build"
+CMAKE_BINARY_DIR = /home/matti/projects/cpp4cg5/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/audiophile.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer 
 CMakeFiles/audiophile.dir/all:
 	$(MAKE) -f CMakeFiles/audiophile.dir/build.make CMakeFiles/audiophile.dir/depend
 	$(MAKE) -f CMakeFiles/audiophile.dir/build.make CMakeFiles/audiophile.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles"  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles  1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 	@echo "Built target audiophile"
 .PHONY : CMakeFiles/audiophile.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/audiophile.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/audiophile.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" 15
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matti/projects/cpp4cg5/build/CMakeFiles 15
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/audiophile.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/matti/projects/cpp4cg5/build/CMakeFiles 0
 .PHONY : CMakeFiles/audiophile.dir/rule
 
 # Convenience name for target.

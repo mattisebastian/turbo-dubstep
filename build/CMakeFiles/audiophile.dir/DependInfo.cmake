@@ -4,21 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/engine.cpp" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/src/controller/engine.cpp.o"
-  "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/glut_engine.cpp" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.o"
-  "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/controller/logic.cpp" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/src/controller/logic.cpp.o"
-  "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/box_object_logic.cpp" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o"
-  "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/controller/flappy_engine.cpp" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o"
-  "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/model/box.cpp" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o"
-  "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/box_al_audible.cpp" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o"
-  "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/flappy_box/view/box_gl_drawable.cpp" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o"
-  "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/main.cpp" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/src/main.cpp.o"
-  "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/model/game.cpp" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/src/model/game.cpp.o"
-  "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/model/game_object.cpp" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/src/model/game_object.cpp.o"
-  "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/sound_provider.cpp" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/src/sound_provider.cpp.o"
-  "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/al_renderer.cpp" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.o"
-  "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/gl_renderer.cpp" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.o"
-  "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/src/view/glut_window.cpp" "/media/Capybara/AAA-Studium/8-SS_14/C++ Programmierung fuer Computergraphik/Uebung/05/ex5/build/CMakeFiles/audiophile.dir/src/view/glut_window.cpp.o"
+  "/home/matti/projects/cpp4cg5/src/controller/engine.cpp" "/home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/src/controller/engine.cpp.o"
+  "/home/matti/projects/cpp4cg5/src/controller/glut_engine.cpp" "/home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/src/controller/glut_engine.cpp.o"
+  "/home/matti/projects/cpp4cg5/src/controller/logic.cpp" "/home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/src/controller/logic.cpp.o"
+  "/home/matti/projects/cpp4cg5/src/flappy_box/controller/box_object_logic.cpp" "/home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o"
+  "/home/matti/projects/cpp4cg5/src/flappy_box/controller/flappy_engine.cpp" "/home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o"
+  "/home/matti/projects/cpp4cg5/src/flappy_box/model/box.cpp" "/home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o"
+  "/home/matti/projects/cpp4cg5/src/flappy_box/view/box_al_audible.cpp" "/home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o"
+  "/home/matti/projects/cpp4cg5/src/flappy_box/view/box_gl_drawable.cpp" "/home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o"
+  "/home/matti/projects/cpp4cg5/src/main.cpp" "/home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/src/main.cpp.o"
+  "/home/matti/projects/cpp4cg5/src/model/game.cpp" "/home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/src/model/game.cpp.o"
+  "/home/matti/projects/cpp4cg5/src/model/game_object.cpp" "/home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/src/model/game_object.cpp.o"
+  "/home/matti/projects/cpp4cg5/src/sound_provider.cpp" "/home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/src/sound_provider.cpp.o"
+  "/home/matti/projects/cpp4cg5/src/view/al_renderer.cpp" "/home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.o"
+  "/home/matti/projects/cpp4cg5/src/view/gl_renderer.cpp" "/home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.o"
+  "/home/matti/projects/cpp4cg5/src/view/glut_window.cpp" "/home/matti/projects/cpp4cg5/build/CMakeFiles/audiophile.dir/src/view/glut_window.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
