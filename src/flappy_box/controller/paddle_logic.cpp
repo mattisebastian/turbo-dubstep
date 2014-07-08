@@ -1,4 +1,4 @@
-# include "flappy_box/controller/box_object_logic.hpp"
+# include "flappy_box/controller/paddle_logic.hpp
 # include <AL/alut.h>
 # include <thread>
 
@@ -7,15 +7,19 @@
 
 using namespace ::flappy_box::controller;
 
-BoxObjectLogic::BoxObjectLogic(const std::shared_ptr< flappy_box::model::Box >& b )
+PaddleLogic::PaddleLogic(const std::shared_ptr< flappy_box::model::Paddle >& p )
     : ::controller::Logic::ObjectLogic()
     , _model( b )
 {}
 
-bool BoxObjectLogic::advance( ::controller::Logic& l, ::controller::InputEventHandler::keyboard_event const& ev )
+bool PaddleLogic::advance( ::controller::Logic& l, ::controller::InputEventHandler::keyboard_event const& ev )
 {
 
     double timestep_sec = l.game_model()->timestep().count();
+    
+    
+    
+    
     
     vec3_type p_alt = _model->position();
     vec3_type v_alt = _model->velocity();
@@ -49,12 +53,9 @@ bool BoxObjectLogic::advance( ::controller::Logic& l, ::controller::InputEventHa
 	v_neu *= 0.8;
     }
     // oben + unten
+    //  TODO: irgendwie wird die Kiste noch nicht richtig begrenzt. (rutscht aus dem Bild)
     if (std::abs(p_neu[2]) > _model->maxPosition()[2]) {
-	if(p_neu[2] < 0) {
-	    p_neu[2] = -1 *_model->maxPosition()[2];
-	}else{
-	    p_neu[2] = _model->maxPosition()[2];
-	}
+	//p_neu[2] = _model->maxPosition()[2];
 	// box at top or bottom end of the world
 	v_neu[2] *= -1;
 	v_neu *= 0.8;

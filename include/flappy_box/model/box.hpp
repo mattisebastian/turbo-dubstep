@@ -48,7 +48,7 @@ namespace flappy_box
         double               _angle;
         double                _size; // same size in every direction
         vec3_type         _position;
-        vec3_type      _maxPosition;
+        vec3_type      _maxPosition; // TODO: keine Ahnung wie ich an die Ausmaße der Welt komme
         vec3_type         _velocity;
         vec3_type     _acceleration;
         double     _rotAcceleration; // only in y-direction
