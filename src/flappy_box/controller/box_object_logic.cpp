@@ -43,7 +43,7 @@ bool BoxObjectLogic::advance( ::controller::Logic& l, ::controller::InputEventHa
     
     //std::cout << p_neu <<  std::endl;
     
-    std::cout << ev.key << " " << ev.key_state << std::endl;
+    //std::cout << ev.key << " " << ev.key_state << std::endl;
     
     // links + rechts
     if (std::abs(p_neu[0]) > _model->maxPosition()[0]) {
