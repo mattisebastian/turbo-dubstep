@@ -15,6 +15,8 @@ BoxObjectLogic::BoxObjectLogic(const std::shared_ptr< flappy_box::model::Box >& 
 bool BoxObjectLogic::advance( ::controller::Logic& l, ::controller::InputEventHandler::keyboard_event const& ev )
 {
 
+    
+    
     double timestep_sec = l.game_model()->timestep().count();
     
     vec3_type p_alt = _model->position();
@@ -39,7 +41,9 @@ bool BoxObjectLogic::advance( ::controller::Logic& l, ::controller::InputEventHa
 
     // check for correct position value
     
-    std::cout << p_neu <<  std::endl;
+    //std::cout << p_neu <<  std::endl;
+    
+    std::cout << ev.key << " " << ev.key_state << std::endl;
     
     // links + rechts
     if (std::abs(p_neu[0]) > _model->maxPosition()[0]) {
