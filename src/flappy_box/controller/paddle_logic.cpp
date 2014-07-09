@@ -1,8 +1,6 @@
 # include "flappy_box/controller/paddle_logic.hpp"
 # include <AL/alut.h>
 # include <thread>
-
-
 # include <GL/freeglut.h>
 
 using namespace ::flappy_box::controller;

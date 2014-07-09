@@ -23,33 +23,41 @@ void BoxGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
 
     // TODO: Replace old rendering code with new and improved rendering - Aufgabe 5.3
 
+  
     float vertices[] = {
 
+	
+	// front
         0.5, -0.5, -0.5,
-        -0.5, -0.5, -0.5,
+	0.5,  -0.5,  0.5,
         -0.5,  -0.5,  0.5,
-        0.5,  -0.5,  0.5,
-
+	-0.5, -0.5, -0.5,
+        
+	// top
         -0.5,  -0.5,  0.5,
         0.5,  -0.5,  0.5,
         0.5,  0.5,  0.5,
         -0.5,  0.5,  0.5,
 
+	// back
         0.5,  0.5,  0.5,
-        -0.5,  0.5,  0.5,
-        -0.5,  0.5,  -0.5,
         0.5,  0.5,  -0.5,
-
+	-0.5,  0.5,  -0.5,
+	-0.5,  0.5,  0.5,
+        
+	// bottom
         -0.5,  0.5,  -0.5,
         0.5,  0.5,  -0.5,
         0.5, -0.5, -0.5,
         -0.5, -0.5, -0.5,
 
+	// right
         0.5, -0.5, -0.5,
-        0.5, -0.5, 0.5,
-        0.5, 0.5, 0.5,
         0.5, 0.5, -0.5,
+	0.5, 0.5, 0.5,
+        0.5, -0.5, 0.5,
 
+	// left
         -0.5, -0.5, -0.5,
         -0.5, -0.5, 0.5,
         -0.5, 0.5, 0.5,
@@ -59,31 +67,37 @@ void BoxGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
 
     float normals[] = {
 
+	// front
         0, -1, 0,
         0, -1, 0,
         0, -1, 0,
         0, -1, 0,
 
+	// top
         0, 0, 1,
         0, 0, 1,
         0, 0, 1,
         0, 0, 1,
 
+	// top
         0, 1, 0,
         0, 1, 0,
         0, 1, 0,
         0, 1, 0,
-
+	
+	// back
         0, 0, -1,
         0, 0, -1,
         0, 0, -1,
         0, 0, -1,
 
+	// right
         1, 0, 0,
         1, 0, 0,
         1, 0, 0,
         1, 0, 0,
 
+	// left
         -1, 0, 0,
         -1, 0, 0,
         -1, 0, 0,
@@ -94,7 +108,7 @@ void BoxGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
     
     glEnableClientState(GL_VERTEX_ARRAY);
     glEnableClientState(GL_NORMAL_ARRAY);
-    //glEnable(GL_CULL_FACE);
+    glEnable(GL_CULL_FACE);
     
     glVertexPointer(
 	3, // 3 components per vertex
@@ -116,25 +130,28 @@ void BoxGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
     const vec3_type& pos = _model->position();
     const double size = _model->size();
     glTranslated( pos[0], pos[1], pos[2] );
-    glRotated( angle, 0., 1., 0. );
+    glRotated( 30, 0., 1., 0 );
     glScaled( size, size, size );
 
-    glColor3f(1.0, 1.0, 1.0);
+    glColor3f(0.5, 0., 1.0);
     glDrawArrays(GL_QUADS, 0, 24);
     
     // Light
     
-    GLfloat light_pos[] = {
-    
-	1.0 ,-1.0 ,1.0 ,1.0
-	
-    };
-    
-    
-   glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
-   glLightfv(GL_LIGHT0, GL_POSITION, light_pos);
-   glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHTING);
     glEnable(GL_LIGHT0);
+    glEnable(GL_COLOR_MATERIAL);
+    glEnable(GL_NORMALIZE);
+    
+    GLfloat light_pos[] = {-1.0, -1.0, 1.0, 1.0};
+    
+    float light_color[] = {1.0, 1.0, 1.0, 1.0};
+   
+    glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+    glLightfv(GL_LIGHT0, GL_POSITION, light_pos);
+    glLightfv(GL_LIGHT0, GL_DIFFUSE, light_color );
+    //glLightf(GL_LIGHT0, GL_SPOT_EXPONENT, 128);file:///home/matti/projects/cpp4cg5/include/flappy_box/controller/box_object_logic.hpp
+   
 //     
 
 
