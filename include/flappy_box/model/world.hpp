@@ -24,14 +24,14 @@ namespace flappy_box
         
         double getWorldHalfHeight() const { return 30.0; }; /* gibt die halbe Ausdehnung der Spielwelt in z-Richtung zurück */
 		
-		double getWorldHalfWidth() const { return 42.0; }; /* gibt die halbe Ausdehnung der Spielwelt in x-Richtung zurück */
+	double getWorldHalfWidth() const { return 42.0; }; /* gibt die halbe Ausdehnung der Spielwelt in x-Richtung zurück */
 
     private:
 
         int _playerPoints;
-		int _remainingLives;
+	int _remainingLives;
 
-    }; // Worlds
+    }; // World
 
   } // model::
 } // flappy_box::
