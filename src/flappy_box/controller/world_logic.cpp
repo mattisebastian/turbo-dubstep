@@ -5,7 +5,7 @@
 # include <AL/alut.h>
 # include <thread>
 # include <chrono>
-
+#include <cmath>
 
 # include <GL/freeglut.h>
 
@@ -26,7 +26,18 @@ void WorldLogic::addBoxToGame( ::controller::Logic& l ) {
 
 void WorldLogic::setForce(std::shared_ptr< flappy_box::model::Box > & box, std::shared_ptr< flappy_box::model::Paddle > & paddle)
 {
+	vec3_type bpos = box->position();
+	vec3_type psize = paddle->size();
 
+	// 1. Fall
+	if ((bpos[0] > -0.5*psize[0]) && (bpos[0] < +0.5*psize[0]))
+	{
+		box->setExternalForce(vec3_type(0, 0, 1)*(10 * box->size() * box->size()));
+	}
+	else
+	{
+
+	}
 }
 
 void WorldLogic::restartGame( ::controller::Logic& l )
@@ -49,21 +60,19 @@ bool WorldLogic::advance( ::controller::Logic& l, ::controller::InputEventHandle
 		addBoxToGame( l );
     }
     
-    auto  it = std::find_if(l.game_model()->objects().begin(), l.game_model()->objects().end(), 
-	[](std::shared_ptr< ::model::GameObject > go) {if(go->name() == "Paddle") return &go;})
+	const auto objects = l.game_model()->objects();
+	
+	// groﬂes R‰tsel bei std::shared_ptr< ::model::GameObject >go  ODER & go
+    auto it = std::find_if(objects.begin(), objects.end(), 
+		[](std::shared_ptr< ::model::GameObject >go) { return typeid(*go) == typeid(::flappy_box::model::Paddle); })
     ;
     
-    ::flappy_box::model::Paddle player_paddle;
+    std::shared_ptr< ::flappy_box::model::Paddle > player_paddle(nullptr);
     
-    if(it != l.game_model()->objects().end())
+	if (it != objects.end())
 	{
-		// object found!
-		player_paddle = dynamic_cast< ::flappy_box::model::Paddle >(it.first());
-    } else
-	{
-    
-	// es gibt kein Paddle
-    }
+		player_paddle = std::dynamic_pointer_cast<::flappy_box::model::Paddle>(*it);
+	}
     
     _model->setPlayerPoints(_model->playerPoints() + 5);
     
@@ -72,63 +81,42 @@ bool WorldLogic::advance( ::controller::Logic& l, ::controller::InputEventHandle
 		_model->setAlive(false);
 		l.game_model()->addGameObject( std::make_shared< ::flappy_box::model::GameOver >( _model->playerPoints() ) );
 	}    
-    
-	// spgo shared_ptr<GameObject>
-	for (auto spgo : l.game_model()->objects())
+
+	for (auto go : objects)
 	{
-		::flappy_box::model::Box box = dynamic_cast<::flappy_box::model::Box>(spgo);
+		std::shared_ptr<::flappy_box::model::Box> bo = std::dynamic_pointer_cast<::flappy_box::model::Box>(go);
+
+		for (auto co : objects)
+		{
+			// Kollision mit sich selbst verhindern
+			if (go == co)
+				continue;
+
+			if (go->isAlive() && co->isAlive())
+			{
+				std::shared_ptr<::flappy_box::model::Box> cobo = std::dynamic_pointer_cast<::flappy_box::model::Box>(go);
+
+				if (sqrt((cobo->position()[0] - bo->position()[0]) * (cobo->position()[0] - bo->position()[0]) +
+					(cobo->position()[1] - bo->position()[1]) * (cobo->position()[1] - bo->position()[1])) < ((bo->size() + cobo->size()) / 2))
+				{
+					bo->setAlive(false);
+					cobo->setAlive(false);
+				}
+
+			}
+		}
+
+		if (!bo || !player_paddle)
+			continue;
+
+		setForce(bo, player_paddle);
+
+		if (bo->position()[2] < player_paddle->position()[2])
+		{
+			bo->setAlive(false);
+			_model->setPlayerPoints(_model->playerPoints() - 1);
+		}
 	}
-//     /*
-//     double timestep_sec = l.game_model()->timestep().count();
-//     
-//     vec3_type p_alt = _model->position();
-//     vec3_type v_alt = _model->velocity();
-//     vec3_type a_alt = _model->acceleration();
-//     vec3_type a_grav(0,0,-1.5);
-//     vec3_type f_ext = _model->externalForce();
-//     double d = 0.8;
-//     double size = _model->size();
-//     /*TODO: Volumen besser ausrechnen? */ double mass = size*size*size;
-//     vec3_type a_ext = f_ext / mass;
-// 
-//     //wanted: a_neu, v_neu, p_neu
-//     vec3_type a_neu = a_alt * d + a_ext + a_grav;
-// 
-//     // explicit. Euler-Method
-//     vec3_type dv = a_neu * timestep_sec;
-//     vec3_type v_neu = v_alt + dv;
-// 
-//     vec3_type dp = v_neu * timestep_sec;
-//     vec3_type p_neu = p_alt + dp;
-// 
-//     // check for correct position value
-//     
-//     //std::cout << p_neu <<  std::endl;
-//     
-//     //std::cout << ev.key << " " << ev.key_state << std::endl;
-//     
-//     // links + rechts
-//     if (std::abs(p_neu[0]) > _model->maxPosition()[0]) {
-//         p_neu[0] =_model->maxPosition()[0];
-//         // box at side end of the world
-// 	v_neu[0] *= -1;
-// 	v_neu *= 0.8;
-//     }
-//     // oben + unten
-//     if (std::abs(p_neu[2]) > _model->maxPosition()[2]) {
-// 	if(p_neu[2] < 0) {
-// 	    p_neu[2] = -1 *_model->maxPosition()[2];
-// 	}else{
-// 	    p_neu[2] = _model->maxPosition()[2];
-// 	}
-// 	// box at top or bottom end of the world
-// 	v_neu[2] *= -1;
-// 	v_neu *= 0.8;
-//     }
-//     
-//     _model->setAcceleration(a_neu);
-//     _model->setVelocity(v_neu);
-//     _model->setPosition(p_neu);
-//         
+
     return false;
-    }
+}

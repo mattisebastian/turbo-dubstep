@@ -150,7 +150,7 @@ void BoxGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
     glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
     glLightfv(GL_LIGHT0, GL_POSITION, light_pos);
     glLightfv(GL_LIGHT0, GL_DIFFUSE, light_color );
-    //glLightf(GL_LIGHT0, GL_SPOT_EXPONENT, 128);file:///home/matti/projects/cpp4cg5/include/flappy_box/controller/box_object_logic.hpp
+    //glLightf(GL_LIGHT0, GL_SPOT_EXPONENT, 128);
    
 //     
 
