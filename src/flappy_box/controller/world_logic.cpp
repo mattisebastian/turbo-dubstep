@@ -66,7 +66,7 @@ bool WorldLogic::advance( ::controller::Logic& l, ::controller::InputEventHandle
     _model->setPlayerPoints(_model->playerPoints() + 5);
     
     if (_model->lives() <= 0) {
-	_model->isAlive(false);
+	_model->setAlive(false);
 	l.game_model()->addGameObject(new flappy_box::model::GameOver(_model->playerPoints()));
     }    
     
