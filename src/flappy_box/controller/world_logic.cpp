@@ -12,7 +12,7 @@
 using namespace ::flappy_box::controller;
 using namespace  std::chrono;
 
-WorldLogic::WorldObjectLogic(const std::shared_ptr< flappy_box::model::World >& w )
+WorldLogic::WorldLogic(const std::shared_ptr< flappy_box::model::World >& w )
     : ::controller::Logic::ObjectLogic()
     , _model( w )
     , _shallRestartTheGame (true)
@@ -20,16 +20,16 @@ WorldLogic::WorldObjectLogic(const std::shared_ptr< flappy_box::model::World >& 
 
 void WorldLogic::addBoxToGame( ::controller::Logic& l ) {
 
-    l.game_model()->addGameObject(new flappy_box::model::Box);
+    l.game_model()->addGameObject(std::make_shared<::flappy_box::model::Box>());
     
 }
 
-void WorldLogic::setForce(std::shared_ptr& box, std::shared_ptr& paddle)
+void WorldLogic::setForce(std::shared_ptr< flappy_box::model::Box > & box, std::shared_ptr< flappy_box::model::Paddle > & paddle)
 {
 
 }
 
-void WorldLogic::restartGame(controller::Logic& l)
+void WorldLogic::restartGame( ::controller::Logic& l )
 {
 
 }
@@ -50,14 +50,14 @@ bool WorldLogic::advance( ::controller::Logic& l, ::controller::InputEventHandle
     }
     
     auto  it = std::find_if(l.game_model()->objects().begin(), l.game_model()->objects().end(), 
-	[](std::share_ptr<model::GameObject> go) {if(go->name() == "Paddle") return &go;})
+	[](std::shared_ptr< ::model::GameObject > go) {if(go->name() == "Paddle") return &go;})
     ;
     
     ::flappy_box::model::Paddle player_paddle;
     
     if(it != l.game_model()->objects().end()){
 	// object found!
-	player_paddle = dynamic_cast<::flappy_box::model::Paddle>(it.first());
+	player_paddle = dynamic_cast< ::flappy_box::model::Paddle >(it.first());
     }else{
     
 	// es gibt kein Paddle

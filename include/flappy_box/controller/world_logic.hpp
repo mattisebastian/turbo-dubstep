@@ -1,7 +1,9 @@
 # pragma once
 
-# include "controller/logic.hpp"
-# include "flappy_box/model/world.hpp"
+#include "controller/logic.hpp"
+#include "flappy_box/model/world.hpp"
+#include "flappy_box/model/box.hpp"
+#include "flappy_box/model/paddle.hpp"
 
 namespace flappy_box
 {
@@ -19,11 +21,10 @@ namespace flappy_box
 
       private:
         std::shared_ptr< model::World > _model;
-	bool _shallRestartTheGame;
-	void addBoxToGame( ::controller::Logic& l );
-	void setForce( std::shared_ptr< flappy_box::model::Box > & box, std::shared_ptr<
-	    flappy_box::model::Paddle > & paddle );
-	void restartGame( ::controller::Logic& l );
+		bool _shallRestartTheGame;
+		void addBoxToGame( ::controller::Logic& l );
+		void setForce( std::shared_ptr< flappy_box::model::Box > & box, std::shared_ptr< flappy_box::model::Paddle > & paddle );
+		void restartGame( ::controller::Logic& l );
 	
     };
 

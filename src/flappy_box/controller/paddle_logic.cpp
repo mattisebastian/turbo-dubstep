@@ -5,16 +5,14 @@
 
 using namespace ::flappy_box::controller;
 
-PaddleLogic(const std::shared_ptr< flappy_box::model::Paddle >& p )
-    : ::controller::Logic::ObjectLogic()
-    , _model( p )
+PaddleLogic::PaddleLogic(const std::shared_ptr< flappy_box::model::Paddle >& p )
+    : _model( p )
 {}
-
+/*::controller::Logic::ObjectLogic()
+    ,*/
 bool PaddleLogic::advance( ::controller::Logic& l, ::controller::InputEventHandler::keyboard_event const& ev )
 {
-    
-
-    double timestep_sec = l.game_model()->timestep().count();
+	double timestep_sec = l.game_model()->timestep().count();
     
     // Nutzerevents auswerten
     
@@ -38,11 +36,10 @@ bool PaddleLogic::advance( ::controller::Logic& l, ::controller::InputEventHandl
     vec3_type v_alt = _model->velocity() * 0.8;
     vec3_type a_alt = _model->acceleration();
     vec3_type a_grav(0,0,-1.5);
-    vec3_type f_ext = _model->externalForce();
     double d = 0.8;
-    double size = _model->size();
-    /*TODO: Volumen besser ausrechnen? */ double mass = size*size*size;
-    vec3_type a_ext = f_ext / mass;
+    //double size = static_cast<double>(_model->size());
+    /*TODO: Volumen besser ausrechnen? */ //double mass = size*size*size;
+    //vec3_type a_ext = f_ext / mass;
 
     //wanted: a_neu, v_neu, p_neu
     vec3_type a_neu = _model->playerControl() * 1000;
@@ -87,4 +84,4 @@ bool PaddleLogic::advance( ::controller::Logic& l, ::controller::InputEventHandl
     _model->setPosition(p_neu);
         
     return false;
-    }
+}

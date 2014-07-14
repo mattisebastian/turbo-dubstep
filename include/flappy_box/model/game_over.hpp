@@ -14,13 +14,13 @@ namespace flappy_box
     {
       public:
 
-        GameOver( const std::string& = "GameOver", const int p );
+        GameOver( const std::string& n, const int p );
 
         const int playerPoints() const { return _playerPoints; }
 
     private:
 
-        int  _playerPoints;
+        const int _playerPoints;
 
     }; // GameOver
 
