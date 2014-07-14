@@ -6,10 +6,10 @@
 using namespace ::flappy_box::controller;
 
 PaddleLogic::PaddleLogic(const std::shared_ptr< flappy_box::model::Paddle >& p )
-    : _model( p )
+    : ::controller::Logic::ObjectLogic(),
+    _model( p )
 {}
-/*::controller::Logic::ObjectLogic()
-    ,*/
+
 bool PaddleLogic::advance( ::controller::Logic& l, ::controller::InputEventHandler::keyboard_event const& ev )
 {
 	double timestep_sec = l.game_model()->timestep().count();

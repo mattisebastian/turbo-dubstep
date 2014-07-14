@@ -1,9 +1,10 @@
 # include "flappy_box/controller/flappy_engine.hpp"
 
 # include "flappy_box/model/box.hpp"
-
-
+#include <flappy_box/model/paddle.hpp>
 # include "flappy_box/controller/box_object_logic.hpp"
+#include "flappy_box/controller/paddle_logic.hpp"
+#include "flappy_box/view/paddle_gl_drawable.hpp"
 # include "flappy_box/view/box_gl_drawable.hpp"
 # include "flappy_box/view/box_al_audible.hpp"
 # include "view/glut_window.hpp"
@@ -19,7 +20,7 @@ using namespace ::flappy_box::controller;
 static std::function< void () > __current_glut_advance_func = [](){ std::cerr << "Warning: Default function called in __current_glut_advance_func." << std::endl; };
 
 FlappyEngine::FlappyEngine( const std::shared_ptr< ::controller::Logic >& l )
-: ::controller::GlutEngine( l )
+: ::controller::GlutEngine::GlutEngine( l )
 , _al_renderer( std::make_shared< ::view::AlRenderer >( game_model() ) )
 , _gl_renderer( std::make_shared< ::view::GlRenderer >( game_model() ) )
 {}
@@ -30,13 +31,16 @@ void FlappyEngine::init( int& argc, char** argv )
 
   alutInit( &argc, argv );
 
-  // register the delegate classes fo Box 
+  // register the delegate classes for Box 
   game_logic() ->   logic_factory().register_module< flappy_box::model::Box >( []( std::shared_ptr< flappy_box::model::Box > const& b ) { return std::make_shared< BoxObjectLogic >     ( b ); } );
   al_renderer()-> audible_factory().register_module< flappy_box::model::Box >( []( std::shared_ptr< flappy_box::model::Box > const& b ) { return std::make_shared< view::BoxAlAudible > ( b ); } );
   gl_renderer()->drawable_factory().register_module< flappy_box::model::Box >( []( std::shared_ptr< flappy_box::model::Box > const& b ) { return std::make_shared< view::BoxGlDrawable >( b ); } );
   
   // TODO: Register all the other delegate classes
-  //.
+  
+  // register delegate classes for Paddle
+  game_logic() ->   logic_factory().register_module< flappy_box::model::Paddle >( []( std::shared_ptr< flappy_box::model::Paddle > const& p ) { return std::make_shared< PaddleLogic >     ( p ); } );
+  gl_renderer()->drawable_factory().register_module< flappy_box::model::Paddle >( []( std::shared_ptr< flappy_box::model::Paddle > const& p ) { return std::make_shared< ::flappy_box::view::PaddleGlDrawable >( p ); } );
   //.
   //.
   
