@@ -1,5 +1,5 @@
 # include "flappy_box/controller/world_logic.hpp"
-#include <flappy_box/model/box.hpp>
+#include "flappy_box/model/box.hpp""
 #include <flappy_box/model/paddle.hpp>
 #include <flappy_box/model/game_over.hpp>
 # include <AL/alut.h>
@@ -39,14 +39,14 @@ bool WorldLogic::advance( ::controller::Logic& l, ::controller::InputEventHandle
 {
 
     if(_shallRestartTheGame) 
-	restartGame(l);
+		restartGame(l);
     
     static steady_clock::time_point now = steady_clock::now();
     
     if((duration_cast<duration<double>>(steady_clock::now() - now)).count() > 5.0  ){
-	std::cout << "2s um!!" << std::endl;
-	now = steady_clock::now();
-	addBoxToGame( l );
+		std::cout << "2s um!!" << std::endl;
+		now = steady_clock::now();
+		addBoxToGame( l );
     }
     
     auto  it = std::find_if(l.game_model()->objects().begin(), l.game_model()->objects().end(), 
@@ -55,21 +55,29 @@ bool WorldLogic::advance( ::controller::Logic& l, ::controller::InputEventHandle
     
     ::flappy_box::model::Paddle player_paddle;
     
-    if(it != l.game_model()->objects().end()){
-	// object found!
-	player_paddle = dynamic_cast< ::flappy_box::model::Paddle >(it.first());
-    }else{
+    if(it != l.game_model()->objects().end())
+	{
+		// object found!
+		player_paddle = dynamic_cast< ::flappy_box::model::Paddle >(it.first());
+    } else
+	{
     
 	// es gibt kein Paddle
     }
     
     _model->setPlayerPoints(_model->playerPoints() + 5);
     
-    if (_model->lives() <= 0) {
-	_model->setAlive(false);
-	l.game_model()->addGameObject(new flappy_box::model::GameOver(_model->playerPoints()));
-    }    
+    if (_model->lives() <= 0)
+	{
+		_model->setAlive(false);
+		l.game_model()->addGameObject( std::make_shared< ::flappy_box::model::GameOver >( _model->playerPoints() ) );
+	}    
     
+	// spgo shared_ptr<GameObject>
+	for (auto spgo : l.game_model()->objects())
+	{
+		::flappy_box::model::Box box = dynamic_cast<::flappy_box::model::Box>(spgo);
+	}
 //     /*
 //     double timestep_sec = l.game_model()->timestep().count();
 //     

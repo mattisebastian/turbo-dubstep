@@ -23,7 +23,7 @@ namespace controller
       Logic( std::shared_ptr< model::Game > const& );
 
       // Advance model.
-      virtual bool advance_model( controller::InputEventHandler::keyboard_event const& = controller::InputEventHandler::keyboard_event() );
+      virtual bool advance_model( ::controller::InputEventHandler::keyboard_event const& = ::controller::InputEventHandler::keyboard_event() );
       
 
       std::shared_ptr< model::Game >       game_model()       { return _model; }
