@@ -6,6 +6,7 @@
 # include <thread>
 # include <chrono>
 #include <cmath>
+#include <random>
 
 # include <GL/freeglut.h>
 
@@ -18,9 +19,21 @@ WorldLogic::WorldLogic(const std::shared_ptr< flappy_box::model::World >& w )
     , _shallRestartTheGame (true)
 {}
 
-void WorldLogic::addBoxToGame( ::controller::Logic& l ) {
+void WorldLogic::addBoxToGame( ::controller::Logic& l )
+{
+	std::default_random_engine generator;
+	std::uniform_int_distribution<int> xc(-(_model->getWorldHalfWidth()), _model->getWorldHalfWidth());
+	std::uniform_real_distribution<float> s(1., 4.);
+	int x = xc(generator);
+	float size = s(generator);
+	// TODO
+	std::shared_ptr< ::flappy_box::model::Box > new_box = std::make_shared< ::flappy_box::model::Box >();
+	new_box->setPosition(vec3_type(static_cast<double>(x), 2., 1.));
+	new_box->setMaxPosition(vec3_type(_model->getWorldHalfWidth()-(size/2), _model->getWorldHalfHeight()-(size/2), 1.));
 
-    l.game_model()->addGameObject(std::make_shared<::flappy_box::model::Box>());
+	new_box->setSize(size);
+
+    l.game_model()->addGameObject(new_box);
     
 }
 
