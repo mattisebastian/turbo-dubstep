@@ -20,10 +20,11 @@ using namespace ::flappy_box::controller;
 static std::function< void () > __current_glut_advance_func = [](){ std::cerr << "Warning: Default function called in __current_glut_advance_func." << std::endl; };
 
 FlappyEngine::FlappyEngine( const std::shared_ptr< ::controller::Logic >& l )
-: ::controller::GlutEngine::GlutEngine( l )
-, _al_renderer( std::make_shared< ::view::AlRenderer >( game_model() ) )
-, _gl_renderer( std::make_shared< ::view::GlRenderer >( game_model() ) )
-{}
+{
+	::controller::GlutEngine::GlutEngine(l);
+	_al_renderer = std::make_shared< ::view::AlRenderer >(game_model());
+	_gl_renderer = std::make_shared< ::view::GlRenderer >(game_model());
+}
 
 void FlappyEngine::init( int& argc, char** argv )
 {

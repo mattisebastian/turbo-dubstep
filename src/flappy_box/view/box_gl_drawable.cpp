@@ -111,18 +111,16 @@ void BoxGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
     glEnable(GL_CULL_FACE);
     
     glVertexPointer(
-	3, // 3 components per vertex
-	GL_FLOAT,
-	0, // our data is not tightly packed
-	vertices
-		    
-	
-    );
+		3, // 3 components per vertex
+		GL_FLOAT,
+		0, // our data is not tightly packed
+		vertices
+	);
     
     glNormalPointer(
-	GL_FLOAT,
-	0,
-	normals
+		GL_FLOAT,
+		0,
+		normals
     );
     
     // Positionierung der Box
@@ -136,6 +134,14 @@ void BoxGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
     glColor3f(0.5, 0., 1.0);
     glDrawArrays(GL_QUADS, 0, 24);
     
+	// 5.3.2
+	glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+	glLineWidth(3);
+	glColor3f(1., 1., 1.);
+	glDrawArrays(GL_QUADS, 0, 24);
+	// Zurückschalten
+	glPolygonMode(GL_FRONT_AND_BACK, GL_FILL);
+
     // Light
     
     glEnable(GL_LIGHTING);

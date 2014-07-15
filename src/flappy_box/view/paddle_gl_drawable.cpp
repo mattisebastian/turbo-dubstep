@@ -72,25 +72,12 @@ void PaddleGlDrawable::updateVBOs()
 			// Indizes speichern
 			index = smallradius_partitions * i * 6;
 
-			indices[index] = (j) + r;
-			indices[index + 1] = (j + 15) + r % 600;
-			indices[index + 2] = (j + 1) % 15 + r;
-			indices[index + 3] = (j + 1) % 15 + r;
-			indices[index + 4] = (j + 15) + r % 600;
-			indices[index + 5] = (j + 16) + r % 600;
-		}
-	}
-	for (int i = 0; i < bigradius_partitions; i++)
-	{
-		for (int j = 0; j < smallradius_partitions; j++)
-		{
-			int index = i*bigradius_partitions + j*smallradius_partitions;
-			indices[index] = i;
-			indices[index + 1] = i + 15;
-			indices[i + 2] = i + 1;
-			indices[i + 3] = i + 1;
-			indices[i + 4] = i + 15;
-			indices[i + 5] = i + 16;
+			indices[index] = (j + r);
+			indices[index + 1] = (j + 15 + r) % 600;
+			indices[index + 2] = ((j + 1) % 15) + r;
+			indices[index + 3] = ((j + 1) % 15) + r;
+			indices[index + 4] = (j + 15 + r) % 600;
+			indices[index + 5] = (((j + 1) % 15 ) + 15 + r) % 600;
 		}
 	}
 
