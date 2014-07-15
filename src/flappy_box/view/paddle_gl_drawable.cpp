@@ -11,8 +11,9 @@ PaddleGlDrawable::PaddleGlDrawable(const std::shared_ptr< ::flappy_box::model::P
 	updateVBOs();
 
 	glGenBuffers(3, this->ring_vbuf);
-	//glVertexPointer();
 	glBindBuffer(GL_ARRAY_BUFFER, *ring_vbuf);
+	glVertexPointer(3, GL_FLOAT, 3, NULL);
+	glBufferData(GL_ARRAY_BUFFER, sizeof(data), data, GL_STATIC_DRAW);
 }
 
 PaddleGlDrawable::~PaddleGlDrawable()
@@ -37,8 +38,8 @@ void PaddleGlDrawable::updateVBOs()
 {
 	// ring_seg1 ... Außenradius (großer Radius)
 	// ring_seg2 ... Radius Kreissegmente (kleiner Radius)
-	bigradius = std::max(_model->size()[0], _model->size()[2]) / 2;
-	smallradius = std::min(_model->size()[1] / 2, bigradius);
+	double bigradius = std::max(_model->size()[0], _model->size()[2]) / 2;
+	double smallradius = std::min(_model->size()[1] / 2, bigradius);
 
 	double alpha = 0;
 	double beta = 0;
@@ -56,24 +57,24 @@ void PaddleGlDrawable::updateVBOs()
 			int index = (i*ring_seg1 + j*ring_seg2) * 3;
 			
 			// Vertex-Daten speichern
-			vertices[index] = bigradius * cos(alpha) + smallradius*(cos(beta)*cos(alpha));
-			vertices[index+1] = bigradius * sin(alpha) + smallradius*(cos(beta)*sin(alpha));
-			vertices[index+2] = smallradius * sin(beta);
+			ring_vertices[index] = bigradius * cos(alpha) + smallradius*(cos(beta)*cos(alpha));
+			ring_vertices[index + 1] = bigradius * sin(alpha) + smallradius*(cos(beta)*sin(alpha));
+			ring_vertices[index + 2] = smallradius * sin(beta);
 
 			// Normalen-Daten speichern
-			normals[index] = cos(beta) * cos(alpha);
-			normals[index+1] = cos(beta) * sin(alpha);
-			normals[index+2] = sin(beta);
+			ring_normals[index] = cos(beta) * cos(alpha);
+			ring_normals[index + 1] = cos(beta) * sin(alpha);
+			ring_normals[index + 2] = sin(beta);
 
 			// Indizes speichern
 			index = ring_seg2 * i * 6;
 
-			indices[index] = (j + r);
-			indices[index + 1] = (j + 15 + r) % 600;
-			indices[index + 2] = ((j + 1) % 15) + r;
-			indices[index + 3] = ((j + 1) % 15) + r;
-			indices[index + 4] = (j + 15 + r) % 600;
-			indices[index + 5] = (((j + 1) % 15 ) + 15 + r) % 600;
+			ring_indices[index] = (j + r);
+			ring_indices[index + 1] = (j + 15 + r) % 600;
+			ring_indices[index + 2] = ((j + 1) % 15) + r;
+			ring_indices[index + 3] = ((j + 1) % 15) + r;
+			ring_indices[index + 4] = (j + 15 + r) % 600;
+			ring_indices[index + 5] = (((j + 1) % 15) + 15 + r) % 600;
 		}
 	}
 

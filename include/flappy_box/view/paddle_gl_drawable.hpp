@@ -24,17 +24,13 @@ namespace flappy_box
 
 		// 5.4.1
 		void updateVBOs();
-
-		double bigradius;
-		double smallradius;
 		
 		static const unsigned int ring_seg1 = 40;
 		static const unsigned int ring_seg2 = 15;
 
-		float vertices[1800];
-		float normals[1800];
-
-		int indices[3600];
+		float ring_vertices[1800];
+		float ring_normals[1800];
+		int ring_indices[3600];
 
 		GLuint ring_vbuf[3];
 
