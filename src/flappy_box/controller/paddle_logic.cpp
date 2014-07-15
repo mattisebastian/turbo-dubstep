@@ -52,7 +52,7 @@ bool PaddleLogic::advance( ::controller::Logic& l, ::controller::InputEventHandl
 
     // check for correct position value
     
-    std::cout << p_neu <<  std::endl;
+    //std::cout << p_neu <<  std::endl;
     
     // limit speed to 100
     
