@@ -35,5 +35,4 @@ void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& w)
 
 	GLfloat fogColor[4] = { 1.0, 1.0, 1.0, 1.0 };
 	glFogfv(GL_FOG_COLOR, fogColor);
-
 }
