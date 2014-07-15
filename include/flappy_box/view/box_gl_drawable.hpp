@@ -19,6 +19,9 @@ namespace flappy_box
       private:
         std::shared_ptr< model::Box const > _model;
 
+		static float vertices[72];
+		static float normals[72];
+
     }; // BoxGlDrawable
   }
 }

@@ -4,6 +4,9 @@
 
 # include "flappy_box/model/paddle.hpp"
 
+#include <GL/glew.h>
+#include <GL/freeglut.h>
+
 namespace flappy_box
 {
   namespace view
@@ -25,13 +28,15 @@ namespace flappy_box
 		double bigradius;
 		double smallradius;
 		
-		static const unsigned int bigradius_partitions = 40;
-		static const unsigned int smallradius_partitions = 15;
+		static const unsigned int ring_seg1 = 40;
+		static const unsigned int ring_seg2 = 15;
 
 		float vertices[1800];
 		float normals[1800];
 
 		int indices[3600];
+
+		GLuint ring_vbuf[3];
 
     }; // PaddleGlDrawable
   }
