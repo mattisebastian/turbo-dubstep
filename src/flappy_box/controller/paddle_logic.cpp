@@ -6,8 +6,7 @@
 using namespace ::flappy_box::controller;
 
 PaddleLogic::PaddleLogic(const std::shared_ptr< flappy_box::model::Paddle >& p )
-    : ::controller::Logic::ObjectLogic(),
-    _model( p )
+    : _model( p )
 {}
 
 bool PaddleLogic::advance( ::controller::Logic& l, ::controller::InputEventHandler::keyboard_event const& ev )

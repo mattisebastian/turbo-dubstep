@@ -2,7 +2,6 @@
 
 # include "controller/logic.hpp"
 # include "flappy_box/model/paddle.hpp"
-#include "flappy_box/model/box.hpp"
 
 namespace flappy_box
 {
@@ -12,7 +11,7 @@ namespace flappy_box
     class PaddleLogic : public ::controller::Logic::ObjectLogic
     {
       public:
-        PaddleLogic() = delete;
+        //PaddleLogic() = delete;
         PaddleLogic( const std::shared_ptr< ::flappy_box::model::Paddle >& );
 
         virtual bool advance( ::controller::Logic&, ::controller::InputEventHandler::keyboard_event const & ) override;
