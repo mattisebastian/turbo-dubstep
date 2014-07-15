@@ -67,7 +67,7 @@ void WorldLogic::restartGame(::controller::Logic& l)
 	// create and configure new paddle object
 	std::shared_ptr< flappy_box::model::Paddle > user_paddle = std::make_shared< flappy_box::model::Paddle >("PlayerPaddle");
 	user_paddle->setSize(vec3_type(10.0, 1.0, 2.5));
-	user_paddle->setPosition(vec3_type(0.0, 0.0, 0/*-_model->getWorldHalfHeight() + user_paddle->size()[2] * 2.0*/));
+	user_paddle->setPosition(vec3_type(0.0, 0.0, -_model->getWorldHalfHeight() + user_paddle->size()[2] * 2.0));
 	user_paddle->setMaxPosition(vec3_type(_model->getWorldHalfWidth() - user_paddle->size()[0] * 0.5, 0.0, _model->getWorldHalfHeight()));
 	// add paddle object
 	l.game_model()->addGameObject(user_paddle);

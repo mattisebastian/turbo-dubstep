@@ -69,6 +69,9 @@ void FlappyEngine::init( int& argc, char** argv )
   game_model()->addGameObject( box );
   
   std::shared_ptr< ::flappy_box::model::Paddle > player_paddle = std::make_shared< ::flappy_box::model::Paddle >("Player Paddle");
+  player_paddle->setSize(vec3_type(10.0, 1.0, 2.5));
+  //player_paddle->setPosition(vec3_type(0.0, 0.0, -_model->getWorldHalfHeight() + user_paddle->size()[2] * 2.0));
+  //player_paddle->setMaxPosition(vec3_type(_model->getWorldHalfWidth() - user_paddle->size()[0] * 0.5, 0.0, _model->getWorldHalfHeight()));
   game_model()->addGameObject(player_paddle);
   // TODO: Aufgabe 3.4 create and add a world object here
   //...
