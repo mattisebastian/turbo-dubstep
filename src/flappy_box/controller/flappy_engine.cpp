@@ -20,11 +20,10 @@ using namespace ::flappy_box::controller;
 static std::function< void () > __current_glut_advance_func = [](){ std::cerr << "Warning: Default function called in __current_glut_advance_func." << std::endl; };
 
 FlappyEngine::FlappyEngine( const std::shared_ptr< ::controller::Logic >& l )
-{
-	::controller::GlutEngine::GlutEngine(l);
-	_al_renderer = std::make_shared< ::view::AlRenderer >(game_model());
-	_gl_renderer = std::make_shared< ::view::GlRenderer >(game_model());
-}
+: GlutEngine( l )
+, _al_renderer( std::make_shared< ::view::AlRenderer >( game_model() ) )
+, _gl_renderer( std::make_shared< ::view::GlRenderer >( game_model() ) )
+{}
 
 void FlappyEngine::init( int& argc, char** argv )
 {
@@ -40,8 +39,9 @@ void FlappyEngine::init( int& argc, char** argv )
   // TODO: Register all the other delegate classes
   
   // register delegate classes for Paddle
-  game_logic() ->   logic_factory().register_module< flappy_box::model::Paddle >( []( std::shared_ptr< flappy_box::model::Paddle > const& p ) { return std::make_shared< PaddleLogic >     ( p ); } );
-  gl_renderer()->drawable_factory().register_module< flappy_box::model::Paddle >( []( std::shared_ptr< flappy_box::model::Paddle > const& p ) { return std::make_shared< ::flappy_box::view::PaddleGlDrawable >( p ); } );
+  game_logic() ->   logic_factory().register_module<flappy_box::model::Paddle>([](std::shared_ptr<flappy_box::model::Paddle> const &p) { return std::make_shared< PaddleLogic >           (p); });
+  // al_renderer()-> audible_factory().register_module<flappy_box::model::Paddle>([](std::shared_ptr<flappy_box::model::Paddle> const &p) { return std::make_shared< view::PaddleAlAudible> (p); });
+  gl_renderer()->drawable_factory().register_module<flappy_box::model::Paddle>([](std::shared_ptr<flappy_box::model::Paddle> const &p) { return std::make_shared< flappy_box::view::PaddleGlDrawable>(p); });
   //.
   //.
   
@@ -61,7 +61,7 @@ void FlappyEngine::init( int& argc, char** argv )
 void FlappyEngine::run()
 {
   // Create a window and connect it with a view::GlRenderer and an InputEventHandler.
-  auto window = std::make_shared< ::view::GlutWindow >( "flappy_box", 1500, 1000, gl_renderer() , shared_from_this() );
+  auto window = std::make_shared< ::view::GlutWindow >( "flappy_box", 1280, 720, gl_renderer() , shared_from_this() );
 
   // run game
   GlutEngine::run();
