@@ -8,12 +8,13 @@ using namespace ::flappy_box::view;
 PaddleGlDrawable::PaddleGlDrawable(const std::shared_ptr< ::flappy_box::model::Paddle >& b )
 : _model( b )
 {
+	/*
 	updateVBOs();
 	std::cout << "PaddleGlDrawable" << std::endl;
 
 	glGenBuffers(3, this->ring_vbuf);
 	glBindBuffer(GL_ARRAY_BUFFER, *ring_vbuf);
-	glVertexPointer(3, GL_FLOAT, 3, NULL);
+	glVertexPointer(3, GL_FLOAT, 3, NULL);*/
 	//glBufferData(GL_ARRAY_BUFFER, sizeof(data), data, GL_STATIC_DRAW);
 
 }
@@ -24,7 +25,7 @@ PaddleGlDrawable::~PaddleGlDrawable()
 }
 
 void PaddleGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
-{
+{/*
 	::glEnableClientState(GL_VERTEX_ARRAY);
 	::glEnableClientState(GL_NORMAL_ARRAY);
 	::glColor3f(.6f, .9f, .7f);
@@ -33,7 +34,7 @@ void PaddleGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
 	::glBindBuffer(GL_ARRAY_BUFFER, this->ring_vbuf[1]);
 	::glNormalPointer(GL_FLOAT, 0, NULL);
 	::glBindBuffer(GL_ELEMENT_ARRAY_BUFFER_ARB, this->ring_vbuf[2]);
-	::glDrawElements(GL_TRIANGLES, ring_seg1 * ring_seg2 * 6, GL_UNSIGNED_INT, NULL);
+	::glDrawElements(GL_TRIANGLES, ring_seg1 * ring_seg2 * 6, GL_UNSIGNED_INT, NULL);*/
 }
 
 void PaddleGlDrawable::updateVBOs()
@@ -79,10 +80,10 @@ void PaddleGlDrawable::updateVBOs()
 			ring_indices[index + 5] = (((j + 1) % 15) + 15 + r) % 600;
 		}
 	}
-
+	/*
 	glGenBuffers(3, this->ring_vbuf);
 	glBindBuffer(GL_ARRAY_BUFFER, *ring_vbuf);
-	glVertexPointer(3, GL_FLOAT, 3, NULL);
+	glVertexPointer(3, GL_FLOAT, 3, NULL);*/
 	//glBufferData(GL_ARRAY_BUFFER, sizeof(data), data, GL_STATIC_DRAW);
 
 
