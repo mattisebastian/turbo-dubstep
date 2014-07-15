@@ -6,7 +6,10 @@
 # include <thread>
 # include <chrono>
 #include <cmath>
-#include <random>
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 # include <GL/freeglut.h>
 
@@ -21,14 +24,11 @@ WorldLogic::WorldLogic(const std::shared_ptr< flappy_box::model::World >& w )
 
 void WorldLogic::addBoxToGame( ::controller::Logic& l )
 {
-	std::default_random_engine generator;
-	std::uniform_int_distribution<int> xc(-(_model->getWorldHalfWidth()), _model->getWorldHalfWidth());
-	std::uniform_real_distribution<float> s(1., 4.);
-	int x = xc(generator);
-	float size = s(generator);
-	// TODO
+	double x = rand() % static_cast<int>(2 * _model->getWorldHalfWidth()) - _model->getWorldHalfWidth();
+	float size = rand() % 4 + 2;
+
 	std::shared_ptr< ::flappy_box::model::Box > new_box = std::make_shared< ::flappy_box::model::Box >();
-	new_box->setPosition(vec3_type(static_cast<double>(x), 2., 1.));
+	new_box->setPosition(vec3_type(x, 0, _model->getWorldHalfHeight()));
 	new_box->setMaxPosition(vec3_type(_model->getWorldHalfWidth()-(size/2), _model->getWorldHalfHeight()-(size/2), 1.));
 
 	new_box->setSize(size);
@@ -84,7 +84,6 @@ bool WorldLogic::advance( ::controller::Logic& l, ::controller::InputEventHandle
     static steady_clock::time_point now = steady_clock::now();
     
     if((duration_cast<duration<double>>(steady_clock::now() - now)).count() > 5.0  ){
-		std::cout << "2s um!!" << std::endl;
 		now = steady_clock::now();
 		addBoxToGame( l );
     }

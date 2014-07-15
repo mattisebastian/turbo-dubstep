@@ -30,14 +30,44 @@ void PaddleGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
 	glShadeModel(GL_SMOOTH);
 	glEnable(GL_NORMALIZE);
 	glEnable(GL_COLOR_MATERIAL);
-	glEnable(GL_LIGHTING);
-	glEnable(GL_LIGHT0);
+
+	//glEnable(GL_LIGHTING);
+	//glEnable(GL_LIGHT0);
 	glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+	
+	glPushMatrix();
+	glTranslated(pos[0], pos[1], pos[2]);
+
+	glEnableClientState(GL_VERTEX_ARRAY);
+	glEnableClientState(GL_NORMAL_ARRAY);
+
+	glColor3f(.6f, .9f, .7f);
+	glBindBuffer(GL_ARRAY_BUFFER, this->ring_vbuf[0]);
+	glVertexPointer(3, GL_FLOAT, 0, NULL);
+	glBindBuffer(GL_ARRAY_BUFFER, this->ring_vbuf[1]);
+	glNormalPointer(GL_FLOAT, 0, NULL);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER_ARB, this->ring_vbuf[2]);
+	glDrawElements(GL_TRIANGLES, ring_seg1 * ring_seg2 * 6, GL_UNSIGNED_INT, NULL);
+
+	//glDisable(GL_LIGHTING);
+
+	glPopMatrix();
+
+	/*
+	glDepthMask(GL_TRUE);
+	glDisable(GL_BLEND);
+	*/
+	glBindBuffer(GL_ARRAY_BUFFER, 0);
+	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
+	
+	glDisableClientState(GL_VERTEX_ARRAY);
+	glDisableClientState(GL_COLOR_ARRAY);
+	
 	/*float l_pos[] = {
-		float(pos[0]),
-		float(pos[1] - 1 * 1.5),
-		float(pos[2] + 1 * 3),
-		1
+	float(pos[0]),
+	float(pos[1] - 1 * 1.5),
+	float(pos[2] + 1 * 3),
+	1
 	};
 	float l_amb[] = { 0, 0, 0, 1 };
 	float l_dif[] = { 1, 1, 1, 1 };
@@ -46,43 +76,6 @@ void PaddleGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
 	glLightfv(GL_LIGHT0, GL_DIFFUSE, l_dif);
 	*/
 
-	glEnableClientState(GL_VERTEX_ARRAY);
-	glEnableClientState(GL_NORMAL_ARRAY);
-
-
-	glPushMatrix();
-	glTranslated(pos[0], pos[1], pos[2]);
-
-
-	glColor3f(0.6, 0.9, 0.7);
-	glBindBuffer(GL_ARRAY_BUFFER, ring_vbuf[0]);
-	glVertexPointer(3, GL_FLOAT, 0, NULL);
-	glBindBuffer(GL_ARRAY_BUFFER, ring_vbuf[1]);
-	glNormalPointer(GL_FLOAT, 0, NULL);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER_ARB, ring_vbuf[2]);
-	glDrawElements(GL_TRIANGLES, ring_seg1 * ring_seg2 * 6, GL_UNSIGNED_INT, NULL);
-
-	glDisable(GL_LIGHTING);
-
-	glPopMatrix();
-
-	glDepthMask(GL_TRUE);
-	glDisable(GL_BLEND);
-	glBindBuffer(GL_ARRAY_BUFFER, 0);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
-	glDisableClientState(GL_VERTEX_ARRAY);
-	glDisableClientState(GL_COLOR_ARRAY);
-	/*
-	glEnableClientState(GL_VERTEX_ARRAY);
-	glEnableClientState(GL_NORMAL_ARRAY);
-	glColor3f(.6f, .9f, .7f);
-	glBindBuffer(GL_ARRAY_BUFFER, this->ring_vbuf[0]);
-	glVertexPointer(3, GL_FLOAT, 0, NULL);
-	glBindBuffer(GL_ARRAY_BUFFER, this->ring_vbuf[1]);
-	glNormalPointer(GL_FLOAT, 0, NULL);
-	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER_ARB, this->ring_vbuf[2]);
-	glDrawElements(GL_TRIANGLES, ring_seg1 * ring_seg2 * 6, GL_UNSIGNED_INT, NULL);
-	*/
 }
 
 void PaddleGlDrawable::updateVBOs()
