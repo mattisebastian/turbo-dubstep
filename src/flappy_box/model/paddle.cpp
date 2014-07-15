@@ -11,5 +11,5 @@ Paddle::Paddle( const std::string& n )
 ,          _size( 4.0, 4.0, 2.0 )
 , _playerControl( 1.0, 1.0, 1.0 )
 {
-
+	std::cout << "Paddle" << std::endl;
 }

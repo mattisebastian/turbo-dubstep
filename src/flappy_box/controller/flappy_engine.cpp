@@ -49,9 +49,11 @@ void FlappyEngine::init( int& argc, char** argv )
   // create one single cube (to be deleted later...)
   std::shared_ptr< flappy_box::model::Box > box = std::make_shared< flappy_box::model::Box >("Box"); 
   box->setSize(20.0);
-  box->setAngle(22.5);
+  box->setAngle(0);
   game_model()->addGameObject( box );
   
+  std::shared_ptr< ::flappy_box::model::Paddle > player_paddle = std::make_shared< ::flappy_box::model::Paddle >("Player Paddle");
+  game_model()->addGameObject(player_paddle);
   // TODO: Aufgabe 3.4 create and add a world object here
   //...
   

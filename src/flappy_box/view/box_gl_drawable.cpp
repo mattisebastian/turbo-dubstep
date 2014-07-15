@@ -48,7 +48,7 @@ void BoxGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& w)
 		const vec3_type& pos = _model->position();
 		const double size = _model->size();
 		glTranslated(pos[0], pos[1], pos[2]);
-		glRotated(30, 0., 1., 0);
+		glRotated(angle, 0., 1., 0);
 		glScaled(size, size, size);
 
 		glColor3f(0.5, 0., 1.0);

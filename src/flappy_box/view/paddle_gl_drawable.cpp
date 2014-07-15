@@ -9,6 +9,7 @@ PaddleGlDrawable::PaddleGlDrawable(const std::shared_ptr< ::flappy_box::model::P
 : _model( b )
 {
 	updateVBOs();
+	std::cout << "PaddleGlDrawable" << std::endl;
 
 	glGenBuffers(3, this->ring_vbuf);
 	glBindBuffer(GL_ARRAY_BUFFER, *ring_vbuf);

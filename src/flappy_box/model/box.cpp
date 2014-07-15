@@ -14,5 +14,5 @@ Box::Box( const std::string& n )
 , _rotAcceleration( 0.0 )
 ,     _rotVelocity( 0.0 )
 {
-
+	std::cout << "Box" << std::endl;
 }
