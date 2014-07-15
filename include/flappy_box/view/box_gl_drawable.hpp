@@ -23,7 +23,7 @@ private:
 
     static float vertices[72];
     static float normals[72];
-    GLuint texture_id;
+    GLuint _texture;
     
     
 
