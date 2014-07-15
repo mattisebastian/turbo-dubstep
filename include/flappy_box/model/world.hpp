@@ -20,7 +20,7 @@ namespace flappy_box
         void setPlayerPoints( int pP ) { _playerPoints = pP; }
 
         const int& lives() const { return _remainingLives; }
-        void setLives( const int& l ) { _remainingLives = l; }
+        void setRemainingLives( const int& l ) { _remainingLives = l; }
         
         double getWorldHalfHeight() const { return 30.0; }; /* gibt die halbe Ausdehnung der Spielwelt in z-Richtung zurück */
 		
