@@ -10,6 +10,11 @@ PaddleGlDrawable::PaddleGlDrawable(const std::shared_ptr< ::flappy_box::model::P
 {
 	updateVBOs();
 
+	glGenBuffers(3, this->ring_vbuf);
+	glBindBuffer(GL_ARRAY_BUFFER, *ring_vbuf);
+	glVertexPointer(3, GL_FLOAT, 3, NULL);
+	//glBufferData(GL_ARRAY_BUFFER, sizeof(data), data, GL_STATIC_DRAW);
+
 }
 
 PaddleGlDrawable::~PaddleGlDrawable()
