@@ -11,10 +11,7 @@ PaddleGlDrawable::PaddleGlDrawable(const std::shared_ptr< ::flappy_box::model::P
 	std::cout << "PaddleGlDrawable" << std::endl;
 
 	glGenBuffers(3, this->ring_vbuf);
-
 	updateVBOs();
-
-
 }
 
 PaddleGlDrawable::~PaddleGlDrawable()
@@ -36,7 +33,7 @@ void PaddleGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
 	glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
-	float l_pos[] = {
+	/*float l_pos[] = {
 		float(pos[0]),
 		float(pos[1] - 1 * 1.5),
 		float(pos[2] + 1 * 3),
@@ -47,7 +44,7 @@ void PaddleGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
 	glLightfv(GL_LIGHT0, GL_POSITION, l_pos);
 	glLightfv(GL_LIGHT0, GL_AMBIENT, l_amb);
 	glLightfv(GL_LIGHT0, GL_DIFFUSE, l_dif);
-
+	*/
 
 	glEnableClientState(GL_VERTEX_ARRAY);
 	glEnableClientState(GL_NORMAL_ARRAY);
@@ -68,10 +65,6 @@ void PaddleGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
 	glDisable(GL_LIGHTING);
 
 	glPopMatrix();
-
-
-	
-
 
 	glDepthMask(GL_TRUE);
 	glDisable(GL_BLEND);
@@ -142,27 +135,6 @@ void PaddleGlDrawable::updateVBOs()
 		}
 	}
 
-	int index = 0;
-
-	for (int u = 0; u < 3; u++)
-		std::cout << ring_vertices[index + u] << "\t";
-	std::cout << std::endl;
-
-	index = 3;
-	for (int u = 0; u < 3; u++)
-		std::cout << ring_vertices[index + u] << "\t";
-	std::cout << std::endl;
-
-	index = 900;
-	for (int u = 0; u < 3; u++)
-			std::cout << ring_vertices[index + u] << "\t";
-	std::cout << std::endl;
-
-	index = 1797;
-	for (int u = 0; u < 3; u++)
-			std::cout << ring_vertices[index + u] << "\t";
-	std::cout << std::endl;
-	
 	glBindBuffer(GL_ARRAY_BUFFER, ring_vbuf[0]);
 	glBufferData(GL_ARRAY_BUFFER, sizeof(ring_vertices), ring_vertices, GL_STATIC_DRAW);
 

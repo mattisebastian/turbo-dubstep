@@ -115,15 +115,21 @@ bool WorldLogic::advance( ::controller::Logic& l, ::controller::InputEventHandle
 	{
 		std::shared_ptr<::flappy_box::model::Box> bo = std::dynamic_pointer_cast<::flappy_box::model::Box>(go);
 
+		if (typeid(*go) != typeid(::flappy_box::model::Box))
+			continue;
+
 		for (auto co : objects)
 		{
 			// Kollision mit sich selbst verhindern
 			if (go == co)
 				continue;
 
+			if (typeid(*co) != typeid(::flappy_box::model::Box))
+				continue;
+
 			if (go->isAlive() && co->isAlive())
 			{
-				std::shared_ptr<::flappy_box::model::Box> cobo = std::dynamic_pointer_cast<::flappy_box::model::Box>(go);
+				std::shared_ptr<::flappy_box::model::Box> cobo = std::dynamic_pointer_cast<::flappy_box::model::Box>(co);
 
 				if (sqrt((cobo->position()[0] - bo->position()[0]) * (cobo->position()[0] - bo->position()[0]) +
 					(cobo->position()[1] - bo->position()[1]) * (cobo->position()[1] - bo->position()[1])) < ((bo->size() + cobo->size()) / 2))

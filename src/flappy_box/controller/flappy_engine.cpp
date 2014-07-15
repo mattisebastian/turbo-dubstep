@@ -61,21 +61,8 @@ void FlappyEngine::init( int& argc, char** argv )
   // al_renderer()-> audible_factory().register_module<flappy_box::model::Paddle>([](std::shared_ptr<flappy_box::model::Paddle> const &p) { return std::make_shared< view::PaddleAlAudible> (p); });
   //gl_renderer()->drawable_factory().register_module<flappy_box::model::GameOver>([](std::shared_ptr<flappy_box::model::GameOver> const &p) { return std::make_shared< flappy_box::view::GameOverGlDrawable>(p); });
 
-  
-  // create one single cube (to be deleted later...)
-  std::shared_ptr< flappy_box::model::Box > box = std::make_shared< flappy_box::model::Box >("Box"); 
-  box->setSize(10.0);
-  box->setAngle(0);
-  game_model()->addGameObject( box );
-  
-  std::shared_ptr< ::flappy_box::model::Paddle > player_paddle = std::make_shared< ::flappy_box::model::Paddle >("Player Paddle");
-  player_paddle->setSize(vec3_type(10.0, 1.0, 2.5));
-  //player_paddle->setPosition(vec3_type(0.0, 0.0, -_model->getWorldHalfHeight() + user_paddle->size()[2] * 2.0));
-  //player_paddle->setMaxPosition(vec3_type(_model->getWorldHalfWidth() - user_paddle->size()[0] * 0.5, 0.0, _model->getWorldHalfHeight()));
-  game_model()->addGameObject(player_paddle);
-  // TODO: Aufgabe 3.4 create and add a world object here
-  //...
-  
+  std::shared_ptr< flappy_box::model::World > world = std::make_shared< flappy_box::model::World >("Box");
+  game_model()->addGameObject(world);
 }
 
 
