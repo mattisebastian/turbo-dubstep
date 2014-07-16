@@ -1,9 +1,10 @@
 #include "flappy_box/controller/game_over_logic.hpp"
+#include "flappy_box/model/game_over.hpp"
 #include "flappy_box/model/world.hpp"
 
 
 using namespace ::flappy_box::controller;
-GameOverLogic::GameOverLogic(const std::shared_ptr< model::GameOver >& model)
+GameOverLogic::GameOverLogic(const std::shared_ptr< ::flappy_box::model::GameOver >& model)
 : _model(model) {
 }
 

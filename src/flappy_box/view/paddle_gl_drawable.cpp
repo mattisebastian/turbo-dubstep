@@ -26,6 +26,7 @@ void PaddleGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
 	vec3_type pos = _model->position();
 	//float ang = _model->angle();
 
+	//glEnable(GL_CULL_FACE);
 	glEnable(GL_DEPTH_TEST);
 	glShadeModel(GL_SMOOTH);
 	glEnable(GL_NORMALIZE);
@@ -51,10 +52,10 @@ void PaddleGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
 
 	glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
 
+	// Licht
 	GLfloat light_pos[] = { 1.0, -1.0, 1.0, 1.0 };
-	GLfloat light_intens[] = { .5, .5, .5, 0};
 	glLightfv(GL_LIGHT0, GL_POSITION, light_pos);
-	glLightfv(GL_LIGHT0, GL_DIFFUSE, light_intens );
+	glLightfv(GL_LIGHT0, GL_DIFFUSE, new float[] { .5, .5, .5, 0});
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
 
@@ -62,28 +63,19 @@ void PaddleGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
 
 	glPopMatrix();
 
-	/*
-	glDepthMask(GL_TRUE);
-	glDisable(GL_BLEND);
-	*/
 	glBindBuffer(GL_ARRAY_BUFFER, 0);
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 	
-	glDisableClientState(GL_VERTEX_ARRAY);
-	glDisableClientState(GL_COLOR_ARRAY);
 	
-	/*float l_pos[] = {
-	float(pos[0]),
-	float(pos[1] - 1 * 1.5),
-	float(pos[2] + 1 * 3),
-	1
-	};
-	float l_amb[] = { 0, 0, 0, 1 };
-	float l_dif[] = { 1, 1, 1, 1 };
-	glLightfv(GL_LIGHT0, GL_POSITION, l_pos);
-	glLightfv(GL_LIGHT0, GL_AMBIENT, l_amb);
-	glLightfv(GL_LIGHT0, GL_DIFFUSE, l_dif);
-	*/
+	glDepthMask(GL_TRUE);
+	glDisable(GL_BLEND);
+	glDisable(GL_DEPTH_TEST);
+	glDisable(GL_NORMALIZE);
+	glDisable(GL_COLOR_MATERIAL);
+	//glDisable(GL_CULL_FACE);
+	glDisableClientState(GL_VERTEX_ARRAY);
+	glDisableClientState(GL_NORMAL_ARRAY);
+
 
 }
 
@@ -124,13 +116,11 @@ void PaddleGlDrawable::updateVBOs()
 			index = ring_seg2 * i * 6;
 
 			ring_indices[index] = (j + r);
-			ring_indices[index + 2] = ((j + 1) % 15) + r;
 			ring_indices[index + 1] = (j + 15 + r) % 600;
-
+			ring_indices[index + 2] = ((j + 1) % 15) + r;
 			ring_indices[index + 3] = ((j + 1) % 15) + r;
-			
-			ring_indices[index + 5] = (((j + 1) % 15) + 15 + r) % 600;
 			ring_indices[index + 4] = (j + 15 + r) % 600;
+			ring_indices[index + 5] = (((j + 1) % 15) + 15 + r) % 600;
 
 			/* print indices
 			for (int u = 0; u < 6; u++)
