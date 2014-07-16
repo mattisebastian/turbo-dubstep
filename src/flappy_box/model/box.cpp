@@ -7,12 +7,12 @@ Box::Box( const std::string& n )
 ,           _angle( 0.0 )
 ,            _size( 1.0 )
 ,        _position( 0.0, 0.0, 0.0 )
-,     _maxPosition( 20.0, 20.0, 30.0 )
+,     _maxPosition( 42.0, 0.0, 30.0 )
 ,        _velocity( 0.0, 0.0, -5.0 )
 ,    _acceleration( 0.0, 0.0, -5.0 )
 ,   _externalForce( 0.0, 0.0, 0.0 )
 , _rotAcceleration( 0.0 )
 ,     _rotVelocity( 0.0 )
 {
-	std::cout << "Box" << std::endl;
+
 }

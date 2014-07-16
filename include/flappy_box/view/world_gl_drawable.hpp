@@ -4,6 +4,8 @@
 
 # include "flappy_box/model/world.hpp"
 
+#include <GL/freeglut.h>
+
 namespace flappy_box
 {
   namespace view
@@ -18,6 +20,7 @@ namespace flappy_box
 
       private:
         std::shared_ptr< model::World const > _model;
+		GLuint _texture;
 
     }; // BoxGlDrawable
   }

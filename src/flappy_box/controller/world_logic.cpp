@@ -29,7 +29,7 @@ void WorldLogic::addBoxToGame( ::controller::Logic& l )
 
 	std::shared_ptr< ::flappy_box::model::Box > new_box = std::make_shared< ::flappy_box::model::Box >();
 	new_box->setPosition(vec3_type(x, 0, _model->getWorldHalfHeight()));
-	//new_box->setMaxPosition(vec3_type(_model->getWorldHalfWidth()-(size/2), _model->getWorldHalfHeight()-(size/2), 1.));
+	new_box->setMaxPosition(vec3_type(_model->getWorldHalfWidth()-(size/2), 1., _model->getWorldHalfHeight()-(size/2)));
 
 	new_box->setSize(size);
 
@@ -46,7 +46,6 @@ void WorldLogic::setForce(std::shared_ptr< flappy_box::model::Box > & box, std::
 	// 1. Fall Oberhalb Paddle, über der Fläche!
 	if ((bpos[0] > ppos[0]-0.5*psize[0]) && (bpos[0] < ppos[0]+0.5*psize[0]))
 	{
-	    std::cout << "Box über Paddle!" << std::endl;
 		box->setExternalForce(vec3_type(0, 0, 1)*(10 * box->size() * box->size()));
 	}
 	else
