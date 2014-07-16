@@ -85,7 +85,7 @@ void WorldLogic::restartGame(::controller::Logic& l)
     // reject invalidation for world object
     _model->setAlive(true);
     _model->setPlayerPoints(0);
-    _model->setRemainingLives(5);
+    _model->setRemainingLives(50);
     // create and configure new paddle object
     std::shared_ptr< flappy_box::model::Paddle > user_paddle = std::make_shared< flappy_box::model::Paddle >("PlayerPaddle");
     user_paddle->setSize(vec3_type(10.0, 1.0, 2.5));
@@ -130,7 +130,7 @@ bool WorldLogic::advance( ::controller::Logic& l, ::controller::InputEventHandle
 
     if (_model->lives() <= 0)
     {
-        _model->setAlive(false);
+	//player_paddle->setAlive(false);
         l.game_model()->addGameObject( std::make_shared< ::flappy_box::model::GameOver >( _model->playerPoints() ) );
     }
 

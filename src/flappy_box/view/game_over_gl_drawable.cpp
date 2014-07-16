@@ -20,24 +20,24 @@ void GameOverGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& wi
 	glLineWidth(2);
 	glColor3f(1, 1, 1);
 
-	glMatrixMode(GL_PROJECTION);
-	glPushMatrix();
-	glLoadIdentity();
-	glOrtho(-100, 100, -100, 100, -1, 1);
-	glMatrixMode(GL_MODELVIEW);
-	glPushMatrix();
-
-
-	glLoadIdentity();
-	glTranslatef(-55, 0, 0);
-	glScalef(0.15, 0.15, 1);
-	glutStrokeString(GLUT_STROKE_ROMAN, (unsigned char*) "GAME OVER!");
-
-
-	glPopMatrix();
-	glMatrixMode(GL_PROJECTION);
-	glPopMatrix();
-	glMatrixMode(GL_MODELVIEW);
+// 	glMatrixMode(GL_PROJECTION);
+// 	glPushMatrix();
+// 	glLoadIdentity();
+// 	glOrtho(-100, 100, -100, 100, -1, 1);
+// 	glMatrixMode(GL_MODELVIEW);
+// 	glPushMatrix();
+// // 
+// // 
+// // 	glLoadIdentity();
+// // 	glTranslatef(-55, 0, 0);
+// 	glScalef(0.15, 0.15, 1);
+// 	glutStrokeString(GLUT_STROKE_ROMAN, (unsigned char*) "GAME OVER!");
+// 
+// 
+// 	glPopMatrix();
+// 	glMatrixMode(GL_PROJECTION);
+// 	glPopMatrix();
+// 	glMatrixMode(GL_MODELVIEW);
 
 
 
@@ -55,7 +55,7 @@ void GameOverGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& wi
 	glLoadIdentity();
 	glTranslatef(-100, -100, 0);
 	glScalef(0.15, 0.15, 1);
-	glutStrokeString(GLUT_STROKE_ROMAN, (unsigned char*) "press [R] to play again");
+	glutStrokeString(GLUT_STROKE_ROMAN, (unsigned char*) "GAME OVER! \n press [R] to play again");
 
 
 	glPopMatrix();
