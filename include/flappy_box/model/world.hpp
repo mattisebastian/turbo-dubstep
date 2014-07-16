@@ -26,10 +26,14 @@ namespace flappy_box
 		
 	double getWorldHalfWidth() const { return 42.0; }; /* gibt die halbe Ausdehnung der Spielwelt in x-Richtung zurück */
 
+	bool shallRestartTheGame() const { return _shallRestartTheGame; }
+	void setShallRestartTheGame(bool b) { _shallRestartTheGame = b; }
+	
     private:
 
         int _playerPoints;
-		int _remainingLives;
+	int _remainingLives;
+	bool _shallRestartTheGame = true;
 
     }; // World
 

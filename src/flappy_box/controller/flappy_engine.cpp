@@ -15,6 +15,7 @@
 #include "flappy_box/view/box_al_audible.hpp"
 #include "flappy_box/view/paddle_gl_drawable.hpp"
 #include "flappy_box/view/world_gl_drawable.hpp"
+#include "flappy_box/view/game_over_gl_drawable.hpp"
 
 #include "view/glut_window.hpp"
 
@@ -59,7 +60,7 @@ void FlappyEngine::init( int& argc, char** argv )
   // register delegate classes for Game Over
   game_logic()->logic_factory().register_module<flappy_box::model::GameOver>([](std::shared_ptr<flappy_box::model::GameOver> const &p) { return std::make_shared< GameOverLogic >(p); });
   // al_renderer()-> audible_factory().register_module<flappy_box::model::Paddle>([](std::shared_ptr<flappy_box::model::Paddle> const &p) { return std::make_shared< view::PaddleAlAudible> (p); });
-  //gl_renderer()->drawable_factory().register_module<flappy_box::model::GameOver>([](std::shared_ptr<flappy_box::model::GameOver> const &p) { return std::make_shared< flappy_box::view::GameOverGlDrawable>(p); });
+  gl_renderer()->drawable_factory().register_module<flappy_box::model::GameOver>([](std::shared_ptr<flappy_box::model::GameOver> const &p) { return std::make_shared< flappy_box::view::GameOverGlDrawable>(p); });
 
   std::shared_ptr< flappy_box::model::World > world = std::make_shared< flappy_box::model::World >("Box");
   game_model()->addGameObject(world);

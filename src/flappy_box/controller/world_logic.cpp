@@ -19,7 +19,6 @@ using namespace  std::chrono;
 WorldLogic::WorldLogic(const std::shared_ptr< flappy_box::model::World >& w )
     : ::controller::Logic::ObjectLogic()
     , _model( w )
-    , _shallRestartTheGame (true)
 {}
 
 void WorldLogic::addBoxToGame( ::controller::Logic& l )
@@ -86,7 +85,7 @@ void WorldLogic::restartGame(::controller::Logic& l)
     // reject invalidation for world object
     _model->setAlive(true);
     _model->setPlayerPoints(0);
-    _model->setRemainingLives(100);
+    _model->setRemainingLives(5);
     // create and configure new paddle object
     std::shared_ptr< flappy_box::model::Paddle > user_paddle = std::make_shared< flappy_box::model::Paddle >("PlayerPaddle");
     user_paddle->setSize(vec3_type(10.0, 1.0, 2.5));
@@ -95,13 +94,13 @@ void WorldLogic::restartGame(::controller::Logic& l)
     // add paddle object
     l.game_model()->addGameObject(user_paddle);
     // unset restart flag
-    _shallRestartTheGame = false;
+    _model->setShallRestartTheGame(false);
 }
 
 bool WorldLogic::advance( ::controller::Logic& l, ::controller::InputEventHandler::keyboard_event const& ev )
 {
 
-    if(_shallRestartTheGame)
+    if(_model->shallRestartTheGame())
         restartGame(l);
 
     static steady_clock::time_point now = steady_clock::now();

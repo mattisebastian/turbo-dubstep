@@ -81,6 +81,7 @@ add_executable( audiophile src/main.cpp
                           # src/flappy_box/view/paddle_al_audible.cpp
                            src/flappy_box/controller/paddle_logic.cpp
                            src/flappy_box/controller/world_logic.cpp
+                           src/flappy_box/view/game_over_gl_drawable.cpp
                            
                            # sound management
                            src/sound_provider.cpp
