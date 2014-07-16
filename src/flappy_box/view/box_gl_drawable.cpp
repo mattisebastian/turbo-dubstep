@@ -10,7 +10,7 @@ using namespace ::flappy_box::view;
 BoxGlDrawable::BoxGlDrawable(const std::shared_ptr< ::flappy_box::model::Box >& b )
 : _model(b) {
 
- 	glGenTextures(1, &_texture);
+	glGenTextures(1, &_texture);
 	glBindTexture(GL_TEXTURE_2D, _texture);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
@@ -28,25 +28,25 @@ BoxGlDrawable::BoxGlDrawable(const std::shared_ptr< ::flappy_box::model::Box >& 
 }
 
 BoxGlDrawable::~BoxGlDrawable() {
- 	glDeleteTextures(1, &_texture);
+	glDeleteTextures(1, &_texture);
 }
 
 void BoxGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w ) {
 
 	static const float v[] = {
-		 .5, .5,-.5, -.5, .5,-.5, -.5, .5, .5, .5, .5, .5,
-		 .5,-.5, .5, -.5,-.5, .5, -.5,-.5,-.5, .5,-.5,-.5,
-		 .5, .5, .5, -.5, .5, .5, -.5,-.5, .5, .5,-.5, .5,
-		 .5,-.5,-.5, -.5,-.5,-.5, -.5, .5,-.5, .5, .5,-.5,
-		 .5, .5,-.5, .5, .5, .5, .5,-.5, .5, .5,-.5,-.5,
+		.5, .5,-.5, -.5, .5,-.5, -.5, .5, .5, .5, .5, .5,
+		.5,-.5, .5, -.5,-.5, .5, -.5,-.5,-.5, .5,-.5,-.5,
+		.5, .5, .5, -.5, .5, .5, -.5,-.5, .5, .5,-.5, .5,
+		.5,-.5,-.5, -.5,-.5,-.5, -.5, .5,-.5, .5, .5,-.5,
+		.5, .5,-.5, .5, .5, .5, .5,-.5, .5, .5,-.5,-.5,
 		-.5, .5, .5, -.5, .5,-.5, -.5,-.5,-.5, -.5,-.5, .5,
 	};
 	static const float n[] = {
-		 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0,
-		 0,-1, 0, 0,-1, 0, 0,-1, 0, 0,-1, 0,
-		 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1,
-		 0, 0,-1, 0, 0,-1, 0, 0,-1, 0, 0,-1,
-		 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0,
+		0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0,
+		0,-1, 0, 0,-1, 0, 0,-1, 0, 0,-1, 0,
+		0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1,
+		0, 0,-1, 0, 0,-1, 0, 0,-1, 0, 0,-1,
+		1, 0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0,
 		-1, 0, 0, -1, 0, 0, -1, 0, 0, -1, 0, 0,
 	};
 	static const float t[] = {
