@@ -52,8 +52,9 @@ void PaddleGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
 	glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
 
 	GLfloat light_pos[] = { 1.0, -1.0, 1.0, 1.0 };
+	GLfloat light_intens[] = { .5, .5, .5, 0};
 	glLightfv(GL_LIGHT0, GL_POSITION, light_pos);
-	glLightfv(GL_LIGHT0, GL_DIFFUSE, new float[] { .5, .5, .5, 0});
+	glLightfv(GL_LIGHT0, GL_DIFFUSE, light_intens );
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
 
