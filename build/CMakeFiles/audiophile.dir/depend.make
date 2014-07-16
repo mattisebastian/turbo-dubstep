@@ -43,9 +43,17 @@ CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../incl
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/factory_map.hpp
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/flappy_box/controller/box_object_logic.hpp
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/flappy_box/controller/flappy_engine.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/flappy_box/controller/game_over_logic.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/flappy_box/controller/paddle_logic.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/flappy_box/controller/world_logic.hpp
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/flappy_box/model/box.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/flappy_box/model/game_over.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/flappy_box/model/paddle.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/flappy_box/model/world.hpp
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/flappy_box/view/box_al_audible.hpp
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/flappy_box/view/box_gl_drawable.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/flappy_box/view/paddle_gl_drawable.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/flappy_box/view/world_gl_drawable.hpp
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/math.hpp
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/model/game.hpp
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/model/game_object.hpp
@@ -54,10 +62,53 @@ CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../incl
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../include/view/glut_window.hpp
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../src/flappy_box/controller/flappy_engine.cpp
 
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o: ../include/controller/input_event_handler.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o: ../include/controller/logic.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o: ../include/factory_map.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o: ../include/flappy_box/controller/game_over_logic.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o: ../include/flappy_box/model/game_over.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o: ../include/math.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o: ../include/model/game.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o: ../include/model/game_object.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o: ../src/flappy_box/controller/game_over_logic.cpp
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o: ../include/controller/input_event_handler.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o: ../include/controller/logic.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o: ../include/factory_map.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o: ../include/flappy_box/controller/paddle_logic.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o: ../include/flappy_box/model/paddle.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o: ../include/math.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o: ../include/model/game.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o: ../include/model/game_object.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o: ../src/flappy_box/controller/paddle_logic.cpp
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o: ../include/controller/input_event_handler.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o: ../include/controller/logic.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o: ../include/factory_map.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o: ../include/flappy_box/controller/world_logic.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o: ../include/flappy_box/model/box.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o: ../include/flappy_box/model/game_over.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o: ../include/flappy_box/model/paddle.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o: ../include/flappy_box/model/world.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o: ../include/math.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o: ../include/model/game.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o: ../include/model/game_object.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o: ../src/flappy_box/controller/world_logic.cpp
+
 CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o: ../include/flappy_box/model/box.hpp
 CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o: ../include/math.hpp
 CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o: ../include/model/game_object.hpp
 CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o: ../src/flappy_box/model/box.cpp
+
+CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o: ../include/flappy_box/model/paddle.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o: ../include/math.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o: ../include/model/game_object.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o: ../src/flappy_box/model/paddle.cpp
+
+CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o: ../include/flappy_box/model/world.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o: ../include/math.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o: ../include/model/game_object.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o: ../src/flappy_box/model/world.cpp
 
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o: ../include/factory_map.hpp
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o: ../include/flappy_box/model/box.hpp
@@ -77,6 +128,24 @@ CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o: ../include/
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o: ../include/model/game_object.hpp
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o: ../include/view/gl_renderer.hpp
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o: ../src/flappy_box/view/box_gl_drawable.cpp
+
+CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o: ../include/factory_map.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o: ../include/flappy_box/model/paddle.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o: ../include/flappy_box/view/paddle_gl_drawable.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o: ../include/math.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o: ../include/model/game.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o: ../include/model/game_object.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o: ../include/view/gl_renderer.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o: ../src/flappy_box/view/paddle_gl_drawable.cpp
+
+CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o: ../include/factory_map.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o: ../include/flappy_box/model/world.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o: ../include/flappy_box/view/world_gl_drawable.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o: ../include/math.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o: ../include/model/game.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o: ../include/model/game_object.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o: ../include/view/gl_renderer.hpp
+CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o: ../src/flappy_box/view/world_gl_drawable.cpp
 
 CMakeFiles/audiophile.dir/src/main.cpp.o: ../include/controller/engine.hpp
 CMakeFiles/audiophile.dir/src/main.cpp.o: ../include/controller/glut_engine.hpp

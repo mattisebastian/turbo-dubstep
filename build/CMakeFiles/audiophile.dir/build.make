@@ -279,9 +279,55 @@ CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o.provides: CMakeFiles/au
 
 CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o.provides.build: CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o
 
+CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o: CMakeFiles/audiophile.dir/flags.make
+CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o: ../src/flappy_box/model/world.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/model/world.cpp
+
+CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/flappy_box/model/world.cpp > CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.i
+
+CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/flappy_box/model/world.cpp -o CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.s
+
+CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o.requires:
+.PHONY : CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o.requires
+
+CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o.provides: CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o.requires
+	$(MAKE) -f CMakeFiles/audiophile.dir/build.make CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o.provides.build
+.PHONY : CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o.provides
+
+CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o.provides.build: CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o
+
+CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o: CMakeFiles/audiophile.dir/flags.make
+CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o: ../src/flappy_box/model/paddle.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/model/paddle.cpp
+
+CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/flappy_box/model/paddle.cpp > CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.i
+
+CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/flappy_box/model/paddle.cpp -o CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.s
+
+CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o.requires:
+.PHONY : CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o.requires
+
+CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o.provides: CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o.requires
+	$(MAKE) -f CMakeFiles/audiophile.dir/build.make CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o.provides.build
+.PHONY : CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o.provides
+
+CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o.provides.build: CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o
+
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o: ../src/flappy_box/controller/flappy_engine.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_13)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/controller/flappy_engine.cpp
 
@@ -304,7 +350,7 @@ CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o.provides
 
 CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o: ../src/flappy_box/controller/box_object_logic.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_14)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/controller/box_object_logic.cpp
 
@@ -325,9 +371,32 @@ CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o.provi
 
 CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o.provides.build: CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o
 
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o: CMakeFiles/audiophile.dir/flags.make
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o: ../src/flappy_box/controller/game_over_logic.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/controller/game_over_logic.cpp
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/flappy_box/controller/game_over_logic.cpp > CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.i
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/flappy_box/controller/game_over_logic.cpp -o CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.s
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o.requires:
+.PHONY : CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o.requires
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o.provides: CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o.requires
+	$(MAKE) -f CMakeFiles/audiophile.dir/build.make CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o.provides.build
+.PHONY : CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o.provides
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o.provides.build: CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o
+
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o: ../src/flappy_box/view/box_al_audible.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_16)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/view/box_al_audible.cpp
 
@@ -350,7 +419,7 @@ CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o.provides.buil
 
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o: ../src/flappy_box/view/box_gl_drawable.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/view/box_gl_drawable.cpp
 
@@ -371,9 +440,101 @@ CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o.provides: CM
 
 CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o.provides.build: CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o
 
+CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o: CMakeFiles/audiophile.dir/flags.make
+CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o: ../src/flappy_box/view/paddle_gl_drawable.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_18)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/view/paddle_gl_drawable.cpp
+
+CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/flappy_box/view/paddle_gl_drawable.cpp > CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.i
+
+CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/flappy_box/view/paddle_gl_drawable.cpp -o CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.s
+
+CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o.requires:
+.PHONY : CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o.requires
+
+CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o.provides: CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o.requires
+	$(MAKE) -f CMakeFiles/audiophile.dir/build.make CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o.provides.build
+.PHONY : CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o.provides
+
+CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o.provides.build: CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o
+
+CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o: CMakeFiles/audiophile.dir/flags.make
+CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o: ../src/flappy_box/view/world_gl_drawable.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_19)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/view/world_gl_drawable.cpp
+
+CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/flappy_box/view/world_gl_drawable.cpp > CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.i
+
+CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/flappy_box/view/world_gl_drawable.cpp -o CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.s
+
+CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o.requires:
+.PHONY : CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o.requires
+
+CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o.provides: CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o.requires
+	$(MAKE) -f CMakeFiles/audiophile.dir/build.make CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o.provides.build
+.PHONY : CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o.provides
+
+CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o.provides.build: CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o: CMakeFiles/audiophile.dir/flags.make
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o: ../src/flappy_box/controller/paddle_logic.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_20)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/controller/paddle_logic.cpp
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/flappy_box/controller/paddle_logic.cpp > CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.i
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/flappy_box/controller/paddle_logic.cpp -o CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.s
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o.requires:
+.PHONY : CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o.requires
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o.provides: CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o.requires
+	$(MAKE) -f CMakeFiles/audiophile.dir/build.make CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o.provides.build
+.PHONY : CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o.provides
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o.provides.build: CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o: CMakeFiles/audiophile.dir/flags.make
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o: ../src/flappy_box/controller/world_logic.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o -c /home/matti/projects/cpp4cg5/src/flappy_box/controller/world_logic.cpp
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/matti/projects/cpp4cg5/src/flappy_box/controller/world_logic.cpp > CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.i
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/matti/projects/cpp4cg5/src/flappy_box/controller/world_logic.cpp -o CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.s
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o.requires:
+.PHONY : CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o.requires
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o.provides: CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o.requires
+	$(MAKE) -f CMakeFiles/audiophile.dir/build.make CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o.provides.build
+.PHONY : CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o.provides
+
+CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o.provides.build: CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o
+
 CMakeFiles/audiophile.dir/src/sound_provider.cpp.o: CMakeFiles/audiophile.dir/flags.make
 CMakeFiles/audiophile.dir/src/sound_provider.cpp.o: ../src/sound_provider.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/matti/projects/cpp4cg5/build/CMakeFiles $(CMAKE_PROGRESS_22)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/audiophile.dir/src/sound_provider.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/audiophile.dir/src/sound_provider.cpp.o -c /home/matti/projects/cpp4cg5/src/sound_provider.cpp
 
@@ -406,10 +567,17 @@ audiophile_OBJECTS = \
 "CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.o" \
 "CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.o" \
 "CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o" \
+"CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o" \
+"CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o" \
 "CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o" \
 "CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o" \
+"CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o" \
 "CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o" \
 "CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o" \
+"CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o" \
+"CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o" \
+"CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o" \
+"CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o" \
 "CMakeFiles/audiophile.dir/src/sound_provider.cpp.o"
 
 # External object files for target audiophile
@@ -425,10 +593,17 @@ audiophile: CMakeFiles/audiophile.dir/src/view/glut_window.cpp.o
 audiophile: CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.o
 audiophile: CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.o
 audiophile: CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o
+audiophile: CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o
+audiophile: CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o
 audiophile: CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o
 audiophile: CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o
+audiophile: CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o
 audiophile: CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o
 audiophile: CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o
+audiophile: CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o
+audiophile: CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o
+audiophile: CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o
+audiophile: CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o
 audiophile: CMakeFiles/audiophile.dir/src/sound_provider.cpp.o
 audiophile: CMakeFiles/audiophile.dir/build.make
 audiophile: /usr/lib64/libGLU.so
@@ -461,10 +636,17 @@ CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/view/glut_wind
 CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/view/gl_renderer.cpp.o.requires
 CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/view/al_renderer.cpp.o.requires
 CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/flappy_box/model/box.cpp.o.requires
+CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/flappy_box/model/world.cpp.o.requires
+CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/flappy_box/model/paddle.cpp.o.requires
 CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/flappy_box/controller/flappy_engine.cpp.o.requires
 CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/flappy_box/controller/box_object_logic.cpp.o.requires
+CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/flappy_box/controller/game_over_logic.cpp.o.requires
 CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/flappy_box/view/box_al_audible.cpp.o.requires
 CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/flappy_box/view/box_gl_drawable.cpp.o.requires
+CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/flappy_box/view/paddle_gl_drawable.cpp.o.requires
+CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/flappy_box/view/world_gl_drawable.cpp.o.requires
+CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/flappy_box/controller/paddle_logic.cpp.o.requires
+CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/flappy_box/controller/world_logic.cpp.o.requires
 CMakeFiles/audiophile.dir/requires: CMakeFiles/audiophile.dir/src/sound_provider.cpp.o.requires
 .PHONY : CMakeFiles/audiophile.dir/requires
 
