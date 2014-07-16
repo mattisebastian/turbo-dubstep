@@ -24,7 +24,7 @@ WorldLogic::WorldLogic(const std::shared_ptr< flappy_box::model::World >& w )
 void WorldLogic::addBoxToGame( ::controller::Logic& l )
 {
     double x = rand() % static_cast<int>(2 * _model->getWorldHalfWidth()) - _model->getWorldHalfWidth();
-    float size = rand() % 2 + 1;
+    float size = rand() % 3 + 2;
 
     std::shared_ptr< ::flappy_box::model::Box > new_box = std::make_shared< ::flappy_box::model::Box >();
     new_box->setPosition(vec3_type(x, 0, _model->getWorldHalfHeight()));
@@ -67,7 +67,7 @@ void WorldLogic::setForce(std::shared_ptr< flappy_box::model::Box > & box, std::
 
     f.normalize();
     float d = 1;
-    float m = 12;
+    float m = 5;
     f *= powf(n.dot(f), m) * d;
     
     }
