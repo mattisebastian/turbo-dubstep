@@ -33,7 +33,7 @@ void PaddleGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
 
 	//glEnable(GL_LIGHTING);
 	//glEnable(GL_LIGHT0);
-	glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+	//glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
 	
 	glPushMatrix();
 	glTranslated(pos[0], pos[1], pos[2]);
@@ -49,7 +49,15 @@ void PaddleGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w )
 	glBindBuffer(GL_ELEMENT_ARRAY_BUFFER_ARB, this->ring_vbuf[2]);
 	glDrawElements(GL_TRIANGLES, ring_seg1 * ring_seg2 * 6, GL_UNSIGNED_INT, NULL);
 
-	//glDisable(GL_LIGHTING);
+	glColorMaterial(GL_FRONT_AND_BACK, GL_AMBIENT_AND_DIFFUSE);
+
+	GLfloat light_pos[] = { 1.0, -1.0, 1.0, 1.0 };
+	glLightfv(GL_LIGHT0, GL_POSITION, light_pos);
+	glLightfv(GL_LIGHT0, GL_DIFFUSE, new float[] { .5, .5, .5, 0});
+	glEnable(GL_LIGHTING);
+	glEnable(GL_LIGHT0);
+
+	glDisable(GL_LIGHTING);
 
 	glPopMatrix();
 
@@ -82,8 +90,8 @@ void PaddleGlDrawable::updateVBOs()
 {
 	// ring_seg1 ... Außenradius (großer Radius)
 	// ring_seg2 ... Radius Kreissegmente (kleiner Radius)
-	double bigradius = std::max(_model->size()[0], _model->size()[2]) / 2;
-	double smallradius = std::min(_model->size()[1] / 2, bigradius);
+	double r0 = std::max(_model->size()[0], _model->size()[2]) / 2;
+	double r1 = std::min(_model->size()[1] / 2, r0);
 
 	double alpha = 0;
 	double beta = 0;
@@ -101,16 +109,16 @@ void PaddleGlDrawable::updateVBOs()
 			
 			int index = (i * ring_seg2 * 3) + j * 3;
 			
-			// Vertex-Daten speichern
-			ring_vertices[index] = static_cast<float>(bigradius * cos(alpha) + smallradius*(cos(beta)*cos(alpha)));
-			ring_vertices[index + 1] = static_cast<float>(bigradius * sin(alpha) + smallradius*(cos(beta)*sin(alpha)));
-			ring_vertices[index + 2] = static_cast<float>(smallradius * sin(beta));
-
 			// Normalen-Daten speichern
-			ring_normals[index] = static_cast<float>(cos(beta) * cos(alpha));
-			ring_normals[index + 1] = static_cast<float>(cos(beta) * sin(alpha));
-			ring_normals[index + 2] = static_cast<float>(sin(beta));
+			ring_normals[index] = cosf(beta) * cosf(alpha);
+			ring_normals[index + 1] = cosf(beta) * sinf(alpha);
+			ring_normals[index + 2] = sinf(beta);
 
+			// Vertex-Daten speichern
+			ring_vertices[index] = r0 * cosf(alpha) + r1 * ring_normals[index];
+			ring_vertices[index + 1] = r0 * sinf(alpha) + r1 * ring_normals[index + 1];
+			ring_vertices[index + 2] = r1 * ring_normals[index + 2];
+			
 			// Indizes speichern
 			index = ring_seg2 * i * 6;
 
