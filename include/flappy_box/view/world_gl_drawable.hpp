@@ -23,6 +23,7 @@ namespace flappy_box
 
 		GLuint _texture;
 
+		void renderBitmapString(const char *string);
 
     }; // BoxGlDrawable
   }

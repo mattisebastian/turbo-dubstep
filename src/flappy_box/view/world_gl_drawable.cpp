@@ -33,43 +33,22 @@ WorldGlDrawable::~WorldGlDrawable()
 
 void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win)
 {
-	/*
-	glColor3d(0.25, 0.25, 0.25);
-	glBegin(GL_QUADS);
-	glVertex3d(_model->getWorldHalfWidth(), -100, _model->getWorldHalfHeight());
-	glVertex3d(_model->getWorldHalfWidth(), 500, _model->getWorldHalfHeight());
-	glVertex3d(_model->getWorldHalfWidth(), 500, -_model->getWorldHalfHeight());
-	glVertex3d(_model->getWorldHalfWidth(), -100, -_model->getWorldHalfHeight());
-	glEnd();
-	*/
-
 	float w = _model->getWorldHalfWidth();
 	float h = _model->getWorldHalfHeight();
-	float dx = w / 30;
-	float dy = w / 30;
-	float dz = h / 30;
-	float s = 0.1;
-	/*
-	float fog[] = { 0.7, 0.7, 0.7, 1 };
-	glEnable(GL_FOG);
-	glFogfv(GL_FOG_COLOR, fog);
-	glFogf(GL_FOG_MODE, GL_LINEAR);
-	glFogf(GL_FOG_MODE, GL_EXP2);
-	glFogf(GL_FOG_DENSITY, 0.0055);
-	glFogf(GL_FOG_START, 0);
-	glFogf(GL_FOG_END, 100);
-	*/
+	float dx = 2;
+	float dy = 2;
+	float dz = 2;
+	float s = 0.25;
+
 	glEnable(GL_LIGHTING);
 	glEnable(GL_TEXTURE_2D);
 	glBindTexture(GL_TEXTURE_2D, _texture);
 
-	glColor3f(0.6, 0.5, 0.4);
-
 	glBegin(GL_QUADS);
 
 	glNormal3f(0, 0, 1);
-	for (float x = -w - dx; x <= w + dx; x++) {
-		for (float y = -30; y <= 500; y++) {
+	for (float x = -w; x <= w; x += dx) {
+		for (float y = -30; y <= 500; y += dy) {
 			glTexCoord2f(x * s, y * s);
 			glVertex3f(x, y, -h);
 			glTexCoord2f((x + dx) * s, y * s);
@@ -126,7 +105,17 @@ void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win)
 	glDisable(GL_LIGHTING);
 	glDisable(GL_TEXTURE_2D);
 
-	/*
+	// 5.5.1 glFog
+	glEnable(GL_FOG);
+	glFogi(GL_FOG_MODE, GL_LINEAR);
+	glFogf(GL_FOG_DENSITY, 0.5);
+	glFogf(GL_FOG_START, 0.0);
+	glFogf(GL_FOG_END, 500);
+
+	GLfloat fogColor[4] = { 1.0, 1.0, 1.0, 1.0 };
+	glFogfv(GL_FOG_COLOR, fogColor);
+
+	// 5.5.2 
 	glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
 	glEnable(GL_LINE_SMOOTH);
 	glEnable(GL_BLEND);
@@ -163,14 +152,31 @@ void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win)
 
 	glDepthMask(GL_TRUE);
 	glDisable(GL_BLEND);
+	
+	/*
+	glMatrixMode(GL_PROJECTION);
+	glPushMatrix();
+	glLoadIdentity();
+	glOrtho(0, win.width(), 0, win.height(), -1, 1);
+	glMatrixMode(GL_MODELVIEW);
+	glPushMatrix();
+
+	glColor3f(1, 1, 1);
+
+	glRasterPos2d(100, 100);
+	renderBitmapString("HALLO");
+
+	glPopMatrix();
+	glMatrixMode(GL_PROJECTION);
+	glPopMatrix();
+	glMatrixMode(GL_MODELVIEW);
 	*/
+}
 
-	// 5.5.1 glFog
-	glEnable(GL_FOG);
-	glFogi(GL_FOG_MODE, GL_LINEAR);
-	glFogf(GL_FOG_START, 0.0);
-	glFogf(GL_FOG_END, 500);
-
-	GLfloat fogColor[4] = { 1.0, 1.0, 1.0, 1.0 };
-	glFogfv(GL_FOG_COLOR, fogColor);
+void WorldGlDrawable::renderBitmapString(const char *string)
+{
+	for (const char *c = string; *c != '\0'; c++)
+	{
+		glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, *c);
+	}
 }
