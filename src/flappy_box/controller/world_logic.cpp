@@ -47,9 +47,11 @@ void WorldLogic::setForce(std::shared_ptr< flappy_box::model::Box > & box, std::
 
     // 1. Fall Oberhalb Paddle, über der Fläche!
     if ((bpos[0] > ppos[0]-0.5*psize[0]) && (bpos[0] < ppos[0]+0.5*psize[0]))
-    {	f = n;  
+    {	f = n;
+	
+	// super rescue mode
 	if(bpos[2] - ppos[2] < 2)
-	    f*= 100;
+	    f*= 10;
     }
     else
         // 2. Fall: Box nicht über dem Paddle
