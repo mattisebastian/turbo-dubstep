@@ -49,7 +49,7 @@ void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win)
 	float dy = w / 30;
 	float dz = h / 30;
 	float s = 0.1;
-
+	/*
 	float fog[] = { 0.7, 0.7, 0.7, 1 };
 	glEnable(GL_FOG);
 	glFogfv(GL_FOG_COLOR, fog);
@@ -58,7 +58,7 @@ void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win)
 	glFogf(GL_FOG_DENSITY, 0.0055);
 	glFogf(GL_FOG_START, 0);
 	glFogf(GL_FOG_END, 100);
-
+	*/
 	glEnable(GL_LIGHTING);
 	glEnable(GL_TEXTURE_2D);
 	glBindTexture(GL_TEXTURE_2D, _texture);
@@ -68,8 +68,8 @@ void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win)
 	glBegin(GL_QUADS);
 
 	glNormal3f(0, 0, 1);
-	for (float x = -w - dx; x <= w + dx; x += dx) {
-		for (float y = -30; y <= 500; y += dy) {
+	for (float x = -w - dx; x <= w + dx; x++) {
+		for (float y = -30; y <= 500; y++) {
 			glTexCoord2f(x * s, y * s);
 			glVertex3f(x, y, -h);
 			glTexCoord2f((x + dx) * s, y * s);
@@ -126,7 +126,7 @@ void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win)
 	glDisable(GL_LIGHTING);
 	glDisable(GL_TEXTURE_2D);
 
-
+	/*
 	glHint(GL_LINE_SMOOTH_HINT, GL_NICEST);
 	glEnable(GL_LINE_SMOOTH);
 	glEnable(GL_BLEND);
@@ -163,8 +163,9 @@ void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win)
 
 	glDepthMask(GL_TRUE);
 	glDisable(GL_BLEND);
+	*/
 
-
+	// 5.5.1 glFog
 	glEnable(GL_FOG);
 	glFogi(GL_FOG_MODE, GL_LINEAR);
 	glFogf(GL_FOG_START, 0.0);
