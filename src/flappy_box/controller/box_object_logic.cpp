@@ -14,10 +14,7 @@ BoxObjectLogic::BoxObjectLogic(const std::shared_ptr< flappy_box::model::Box >& 
 
 bool BoxObjectLogic::advance( ::controller::Logic& l, ::controller::InputEventHandler::keyboard_event const& ev )
 {
-
-    
-    
-    double timestep_sec = l.game_model()->timestep().count();
+	double timestep_sec = l.game_model()->timestep().count();
     
     vec3_type p_alt = _model->position();
     vec3_type v_alt = _model->velocity();
@@ -46,22 +43,27 @@ bool BoxObjectLogic::advance( ::controller::Logic& l, ::controller::InputEventHa
     //std::cout << ev.key << " " << ev.key_state << std::endl;
     
     // links + rechts
-    if (std::abs(p_neu[0]) > _model->maxPosition()[0]) {
+    if (std::abs(p_neu[0]) > _model->maxPosition()[0])
+	{
         p_neu[0] =_model->maxPosition()[0];
         // box at side end of the world
-	v_neu[0] *= 1;
-	v_neu *= 0.8;
+		v_neu[0] *= 1;
+		v_neu *= 0.8;
     }
     // oben + unten
-    if (std::abs(p_neu[2]) > _model->maxPosition()[2]) {
-	if(p_neu[2] < 0) {
-	    p_neu[2] = -1 *_model->maxPosition()[2];
-	}else{
-	    p_neu[2] = _model->maxPosition()[2];
-	}
-	// box at top or bottom end of the world
-	v_neu[2] *= 1;
-	v_neu *= 0.8;
+    if (std::abs(p_neu[2]) > _model->maxPosition()[2])
+	{
+		if (p_neu[2] < 0)
+		{
+			p_neu[2] = -1 *_model->maxPosition()[2];
+		}
+		else
+		{
+			p_neu[2] = _model->maxPosition()[2];
+		}
+		// box at top or bottom end of the world
+		v_neu[2] *= 1;
+		v_neu *= 0.8;
     }
     
     _model->setAcceleration(a_neu);

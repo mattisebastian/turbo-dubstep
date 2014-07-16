@@ -25,7 +25,7 @@ WorldLogic::WorldLogic(const std::shared_ptr< flappy_box::model::World >& w )
 void WorldLogic::addBoxToGame( ::controller::Logic& l )
 {
 	double x = rand() % static_cast<int>(2 * _model->getWorldHalfWidth()) - _model->getWorldHalfWidth();
-	float size = rand() % 4 + 2;
+	float size = rand() % 2 + 1;
 
 	std::shared_ptr< ::flappy_box::model::Box > new_box = std::make_shared< ::flappy_box::model::Box >();
 	new_box->setPosition(vec3_type(x, 0, _model->getWorldHalfHeight()));
@@ -132,8 +132,8 @@ bool WorldLogic::advance( ::controller::Logic& l, ::controller::InputEventHandle
 				std::shared_ptr<::flappy_box::model::Box> cobo = std::dynamic_pointer_cast<::flappy_box::model::Box>(co);
 
 				auto d = bo->position() - cobo->position();
-			double l = sqrt(d[0] * d[0] + d[1] * d[1] + d[2] * d[2]);
-			if (l <= bo->size() * 0.8 + cobo->size() * 0.8) {
+				double l = sqrt(d[0] * d[0] + d[1] * d[1] + d[2] * d[2]);
+				if (l <= bo->size() * 0.8 + cobo->size() * 0.8) {
 					bo->setAlive(false);
 					cobo->setAlive(false);
 				}
@@ -150,6 +150,7 @@ bool WorldLogic::advance( ::controller::Logic& l, ::controller::InputEventHandle
 		{
 			bo->setAlive(false);
 			_model->setPlayerPoints(_model->playerPoints() - 1);
+			_model->setRemainingLives(_model->lives() - 1);
 		}
 	}
 

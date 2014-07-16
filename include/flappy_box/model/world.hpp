@@ -29,7 +29,7 @@ namespace flappy_box
     private:
 
         int _playerPoints;
-	int _remainingLives;
+		int _remainingLives;
 
     }; // World
 

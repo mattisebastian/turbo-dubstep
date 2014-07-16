@@ -3,31 +3,46 @@
 
 #include <GL/freeglut.h>
 
-#include <algorithm>
+# include <algorithm>
 
 using namespace ::flappy_box::view;
 
 
-WorldGlDrawable::WorldGlDrawable(const std::shared_ptr< ::flappy_box::model::World >& w)
-: _model(w) {
+WorldGlDrawable::WorldGlDrawable(const std::shared_ptr< ::flappy_box::model::World >& b)
+    : _model( b )
+{
 	glGenTextures(1, &_texture);
 	glBindTexture(GL_TEXTURE_2D, _texture);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST);
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST);
+
 	static const unsigned char raw[] {
 		130, 130, 130, 255, 255, 255, 0, 0,
 			255, 255, 255, 130, 130, 130, 0, 0,
 	};
+
 	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB8, 2, 2, 0, GL_RGB, GL_UNSIGNED_BYTE, raw);
 }
 
-WorldGlDrawable::~WorldGlDrawable() {
+WorldGlDrawable::~WorldGlDrawable()
+{
 	glDeleteTextures(1, &_texture);
 }
 
-void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win) {
+void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win)
+{
+	/*
+	glColor3d(0.25, 0.25, 0.25);
+	glBegin(GL_QUADS);
+	glVertex3d(_model->getWorldHalfWidth(), -100, _model->getWorldHalfHeight());
+	glVertex3d(_model->getWorldHalfWidth(), 500, _model->getWorldHalfHeight());
+	glVertex3d(_model->getWorldHalfWidth(), 500, -_model->getWorldHalfHeight());
+	glVertex3d(_model->getWorldHalfWidth(), -100, -_model->getWorldHalfHeight());
+	glEnd();
+	*/
+
 	float w = _model->getWorldHalfWidth();
 	float h = _model->getWorldHalfHeight();
 	float dx = w / 30;
@@ -54,7 +69,7 @@ void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win) 
 
 	glNormal3f(0, 0, 1);
 	for (float x = -w - dx; x <= w + dx; x += dx) {
-		for (float y = -30; y <= 300; y += dy) {
+		for (float y = -30; y <= 500; y += dy) {
 			glTexCoord2f(x * s, y * s);
 			glVertex3f(x, y, -h);
 			glTexCoord2f((x + dx) * s, y * s);
@@ -67,7 +82,7 @@ void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win) 
 	}
 	glNormal3f(0, 0, -1);
 	for (float x = -w - dx; x < w + dx; x += dx) {
-		for (float y = -30; y <= 300; y += dy) {
+		for (float y = -30; y <= 500; y += dy) {
 			glTexCoord2f(x * s, (y + dy) * s);
 			glVertex3f(x, y + dy, h);
 			glTexCoord2f((x + dx) * s, (y + dy) * s);
@@ -80,7 +95,7 @@ void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win) 
 	}
 	glNormal3f(1, 0, 0);
 	for (float z = -h; z < h; z += dz) {
-		for (float y = -60; y <= 300; y += dy) {
+		for (float y = -60; y <= 500; y += dy) {
 			glTexCoord2f(z * s, y * s);
 			glVertex3f(-w, y, z);
 			glTexCoord2f(z * s, (y + dy) * s);
@@ -93,7 +108,7 @@ void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win) 
 	}
 	glNormal3f(-1, 0, 0);
 	for (float z = -h; z < h; z += dz) {
-		for (float y = -60; y <= 300; y += dy) {
+		for (float y = -60; y <= 500; y += dy) {
 			glTexCoord2f((z + dz) * s, y * s);
 			glVertex3f(w, y, z + dz);
 			glTexCoord2f((z + dz) * s, (y + dy) * s);
@@ -148,4 +163,13 @@ void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win) 
 
 	glDepthMask(GL_TRUE);
 	glDisable(GL_BLEND);
+
+
+	glEnable(GL_FOG);
+	glFogi(GL_FOG_MODE, GL_LINEAR);
+	glFogf(GL_FOG_START, 0.0);
+	glFogf(GL_FOG_END, 500);
+
+	GLfloat fogColor[4] = { 1.0, 1.0, 1.0, 1.0 };
+	glFogfv(GL_FOG_COLOR, fogColor);
 }
