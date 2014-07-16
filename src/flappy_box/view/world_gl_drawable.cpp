@@ -133,15 +133,25 @@ void WorldGlDrawable::visualize(::view::GlRenderer& r, ::view::GlutWindow& win)
 
 
 	char line[32];
-	glLoadIdentity(); glTranslatef(10, 10, 0); glScalef(0.15, 0.15, 1);
-	glutStrokeString(GLUT_STROKE_ROMAN, (unsigned char*) "score:");
-	glLoadIdentity(); glTranslatef(70, 10, 0); glScalef(0.15, 0.15, 1);
+	glLoadIdentity();
+	glTranslatef(10, 10, 0);
+	glScalef(0.15, 0.15, 1);
+	glutStrokeString(GLUT_STROKE_MONO_ROMAN, (unsigned char*) "Punkte:");
+
+	glLoadIdentity();
+	glTranslatef(70, 10, 0);
+	glScalef(0.15, 0.15, 1);
 	sprintf(line, "%6d", _model->playerPoints());
 	glutStrokeString(GLUT_STROKE_MONO_ROMAN, (unsigned char*)line);
 
-	glLoadIdentity(); glTranslatef(10, 30, 0); glScalef(0.15, 0.15, 1);
-	glutStrokeString(GLUT_STROKE_ROMAN, (unsigned char*) "lives:");
-	glLoadIdentity(); glTranslatef(70, 30, 0); glScalef(0.15, 0.15, 1);
+	glLoadIdentity();
+	glTranslatef(10, 30, 0);
+	glScalef(0.15, 0.15, 1);
+	glutStrokeString(GLUT_STROKE_ROMAN, (unsigned char*) "Leben:");
+
+	glLoadIdentity();
+	glTranslatef(70, 30, 0);
+	glScalef(0.15, 0.15, 1);
 	sprintf(line, "%6d", _model->lives());
 	glutStrokeString(GLUT_STROKE_MONO_ROMAN, (unsigned char*)line);
 
