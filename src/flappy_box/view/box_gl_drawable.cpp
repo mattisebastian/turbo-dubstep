@@ -101,6 +101,13 @@ void BoxGlDrawable::visualize( ::view::GlRenderer& r, ::view::GlutWindow& w ) {
 
 	glPopMatrix();
 
+	glDisable(GL_CULL_FACE);
+	glDisable(GL_NORMALIZE);
+	glDisable(GL_LIGHTING);
+	glDisable(GL_LIGHT0);
+	glDisable(GL_COLOR_MATERIAL);
+	glDisable(GL_TEXTURE_2D);
+
 	glDisableClientState(GL_VERTEX_ARRAY);
 	glDisableClientState(GL_NORMAL_ARRAY);
 	glDisableClientState(GL_TEXTURE_COORD_ARRAY);

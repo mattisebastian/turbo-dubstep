@@ -14,7 +14,7 @@ namespace flappy_box
     {
       public:
 
-        GameOver(const int p, const std::string& n = "Game Over") : _playerPoints( p ){}
+		  GameOver(const int p, const std::string& n = "Game Over") : _playerPoints(p) { GameObject(true, n); };
 	
 
         const int playerPoints() const { return _playerPoints; }
