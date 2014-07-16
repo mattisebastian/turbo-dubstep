@@ -42,16 +42,22 @@ void WorldLogic::setForce(std::shared_ptr< flappy_box::model::Box > & box, std::
 	vec3_type bpos = box->position();
 	vec3_type ppos = paddle->position();
 	vec3_type psize = paddle->size();
+	vec3_type f;
+	float bsize = box->size();
 
 	// 1. Fall Oberhalb Paddle, über der Fläche!
 	if ((bpos[0] > ppos[0]-0.5*psize[0]) && (bpos[0] < ppos[0]+0.5*psize[0]))
 	{
 		box->setExternalForce(vec3_type(0, 0, 1)*(10 * box->size() * box->size()));
+	   f = vec3_type(0, 0, 1) * 10 * bsize * bsize;
+
 	}
 	else
 	{
-	    box->setExternalForce({0, 0, 0 });
+	    f = vec3_type(0, 0, 0);
 	}
+	
+	box->setExternalForce(f);
 }
 
 void WorldLogic::restartGame(::controller::Logic& l)
