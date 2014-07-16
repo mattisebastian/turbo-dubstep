@@ -17,20 +17,20 @@ bool PaddleLogic::advance( ::controller::Logic& l, ::controller::InputEventHandl
     
     // advance wird hier noch nicht aufgerufen
     // std::cout << ev.key << " " << ev.key_state << std::endl;
-    vec3_type pc(0,0,0);
+    
     
     if(ev.special_key == GLUT_KEY_RIGHT){
-	pc[0] = 1.0;
+	_model->setPlayerControl({1, 0, 0});
     }
     if(ev.special_key == GLUT_KEY_LEFT){
-	pc[0] = -1.0;
+	_model->setPlayerControl({-1, 0, 0});
     }
     if(ev.key_state == 1){
-	pc[0] = 0;
+	_model->setPlayerControl({0, 0, 0});
     }
     
-    _model->setPlayerControl(pc);
-    
+    //_model->setPlayerControl(pc);
+      
     vec3_type p_alt = _model->position();
     vec3_type v_alt = _model->velocity() * 0.8;
     vec3_type a_alt = _model->acceleration();
@@ -41,7 +41,7 @@ bool PaddleLogic::advance( ::controller::Logic& l, ::controller::InputEventHandl
     //vec3_type a_ext = f_ext / mass;
 
     //wanted: a_neu, v_neu, p_neu
-    vec3_type a_neu = _model->playerControl() * 1000;
+    vec3_type a_neu = _model->playerControl() * 300;
 
     // explicit. Euler-Method
     vec3_type dv = a_neu * timestep_sec;
@@ -60,26 +60,20 @@ bool PaddleLogic::advance( ::controller::Logic& l, ::controller::InputEventHandl
 	v_neu[0] = 100;
 	
     }
+    if(v_neu[0] < -100){
+	v_neu[0] = -100;
+	
+    }
 	
     
-    // links + rechts
-    if (std::abs(p_neu[0]) > _model->maxPosition()[0]) {
-        p_neu[0] =_model->maxPosition()[0];
-        // box at side end of the world
-
-    }
-    // oben + unten
-    if (std::abs(p_neu[2]) > _model->maxPosition()[2]) {
-	if(p_neu[2] < 0) {
-	    p_neu[2] = -1 *_model->maxPosition()[2];
-	}else{
-	    p_neu[2] = _model->maxPosition()[2];
+  if(abs(p_neu[0]) > _model->maxPosition()[0]) {
+		v_neu[0] *= -d;
+		p_neu[0] = p_neu[0] < 0 ? -_model->maxPosition()[0] : _model->maxPosition()[0];
 	}
-
-    }
     
     _model->setAcceleration(a_neu);
     _model->setVelocity(v_neu);
+   // std::cout << "xPos: " << p_neu << std::endl;
     _model->setPosition(p_neu);
         
     return false;
