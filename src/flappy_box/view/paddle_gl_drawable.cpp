@@ -124,11 +124,13 @@ void PaddleGlDrawable::updateVBOs()
 			index = ring_seg2 * i * 6;
 
 			ring_indices[index] = (j + r);
-			ring_indices[index + 1] = (j + 15 + r) % 600;
 			ring_indices[index + 2] = ((j + 1) % 15) + r;
+			ring_indices[index + 1] = (j + 15 + r) % 600;
+
 			ring_indices[index + 3] = ((j + 1) % 15) + r;
-			ring_indices[index + 4] = (j + 15 + r) % 600;
+			
 			ring_indices[index + 5] = (((j + 1) % 15) + 15 + r) % 600;
+			ring_indices[index + 4] = (j + 15 + r) % 600;
 
 			/* print indices
 			for (int u = 0; u < 6; u++)
